@@ -1,0 +1,2928 @@
+[
+  {
+    "id": 1,
+    "title": "Two Sum",
+    "difficulty": "Easy",
+    "tags": ["Array", "Hash Table"],
+    "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.",
+    "examples": [
+      {"input": "nums = [2,7,11,15], target = 9", "output": "[0,1]", "explanation": "nums[0] + nums[1] == 9"},
+      {"input": "nums = [3,2,4], target = 6", "output": "[1,2]"},
+      {"input": "nums = [3,3], target = 6", "output": "[0,1]"}
+    ],
+    "constraints": ["2 <= nums.length <= 10^4", "-10^9 <= nums[i] <= 10^9", "Only one valid answer exists."],
+    "test_cases": [
+      {"input": [[2,7,11,15], 9], "expected": [0,1]},
+      {"input": [[3,2,4], 6], "expected": [1,2]},
+      {"input": [[3,3], 6], "expected": [0,1]}
+    ],
+    "function_name": "twoSum",
+    "ts_template": "function twoSum(nums: number[], target: number): number[] {\n    \n}",
+    "go_template": "func twoSum(nums []int, target int) []int {\n    return nil\n}",
+    "cs_template": "    public int[] TwoSum(int[] nums, int target) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 2,
+    "title": "Add Two Numbers",
+    "difficulty": "Medium",
+    "tags": ["Linked List", "Math", "Recursion"],
+    "description": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.",
+    "examples": [
+      {"input": "l1 = [2,4,3], l2 = [5,6,4]", "output": "[7,0,8]", "explanation": "342 + 465 = 807"}
+    ],
+    "constraints": ["The number of nodes in each linked list is in the range [1, 100]", "0 <= Node.val <= 9"],
+    "test_cases": [],
+    "function_name": "addTwoNumbers",
+    "ts_template": "class ListNode {\n    val: number;\n    next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 3,
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "Medium",
+    "tags": ["Hash Table", "String", "Sliding Window"],
+    "description": "Given a string s, find the length of the longest substring without repeating characters.",
+    "examples": [
+      {"input": "s = \"abcabcbb\"", "output": "3", "explanation": "The answer is \"abc\", with the length of 3."},
+      {"input": "s = \"bbbbb\"", "output": "1"},
+      {"input": "s = \"pwwkew\"", "output": "3"}
+    ],
+    "constraints": ["0 <= s.length <= 5 * 10^4", "s consists of English letters, digits, symbols and spaces."],
+    "test_cases": [
+      {"input": ["abcabcbb"], "expected": 3},
+      {"input": ["bbbbb"], "expected": 1},
+      {"input": ["pwwkew"], "expected": 3},
+      {"input": [""], "expected": 0}
+    ],
+    "function_name": "lengthOfLongestSubstring",
+    "ts_template": "function lengthOfLongestSubstring(s: string): number {\n    \n}",
+    "go_template": "func lengthOfLongestSubstring(s string) int {\n    return 0\n}",
+    "cs_template": "    public int LengthOfLongestSubstring(string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 4,
+    "title": "Median of Two Sorted Arrays",
+    "difficulty": "Hard",
+    "tags": ["Array", "Binary Search", "Divide and Conquer"],
+    "description": "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).",
+    "examples": [
+      {"input": "nums1 = [1,3], nums2 = [2]", "output": "2.00000"},
+      {"input": "nums1 = [1,2], nums2 = [3,4]", "output": "2.50000"}
+    ],
+    "constraints": ["nums1.length == m", "nums2.length == n", "0 <= m, n <= 1000"],
+    "test_cases": [
+      {"input": [[1,3], [2]], "expected": 2.0},
+      {"input": [[1,2], [3,4]], "expected": 2.5}
+    ],
+    "function_name": "findMedianSortedArrays",
+    "ts_template": "function findMedianSortedArrays(nums1: number[], nums2: number[]): number {\n    \n}",
+    "go_template": "func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {\n    return 0\n}",
+    "cs_template": "    public double FindMedianSortedArrays(int[] nums1, int[] nums2) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 5,
+    "title": "Longest Palindromic Substring",
+    "difficulty": "Medium",
+    "tags": ["String", "Dynamic Programming"],
+    "description": "Given a string s, return the longest palindromic substring in s.",
+    "examples": [
+      {"input": "s = \"babad\"", "output": "\"bab\"", "explanation": "\"aba\" is also a valid answer."},
+      {"input": "s = \"cbbd\"", "output": "\"bb\""}
+    ],
+    "constraints": ["1 <= s.length <= 1000", "s consist of only digits and English letters."],
+    "test_cases": [
+      {"input": ["babad"], "expected": "bab"},
+      {"input": ["cbbd"], "expected": "bb"},
+      {"input": ["a"], "expected": "a"}
+    ],
+    "function_name": "longestPalindrome",
+    "ts_template": "function longestPalindrome(s: string): string {\n    \n}",
+    "go_template": "func longestPalindrome(s string) string {\n    return \"\"\n}",
+    "cs_template": "    public string LongestPalindrome(string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 6,
+    "title": "Zigzag Conversion",
+    "difficulty": "Medium",
+    "tags": ["String"],
+    "description": "The string \"PAYPALISHIRING\" is written in a zigzag pattern on a given number of rows. Read line by line: \"PAHNAPLSIIGYIR\". Given a string s and numRows, return the converted string.",
+    "examples": [
+      {"input": "s = \"PAYPALISHIRING\", numRows = 3", "output": "\"PAHNAPLSIIGYIR\""},
+      {"input": "s = \"PAYPALISHIRING\", numRows = 4", "output": "\"PINALSIGYAHRPI\""}
+    ],
+    "constraints": ["1 <= s.length <= 1000", "1 <= numRows <= 1000"],
+    "test_cases": [
+      {"input": ["PAYPALISHIRING", 3], "expected": "PAHNAPLSIIGYIR"},
+      {"input": ["PAYPALISHIRING", 4], "expected": "PINALSIGYAHRPI"},
+      {"input": ["A", 1], "expected": "A"}
+    ],
+    "function_name": "convert",
+    "ts_template": "function convert(s: string, numRows: number): string {\n    \n}",
+    "go_template": "func convert(s string, numRows int) string {\n    return \"\"\n}",
+    "cs_template": "    public string Convert(string s, int numRows) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 9,
+    "title": "Palindrome Number",
+    "difficulty": "Easy",
+    "tags": ["Math"],
+    "description": "Given an integer x, return true if x is a palindrome, and false otherwise. An integer is a palindrome when it reads the same forward and backward.",
+    "examples": [
+      {"input": "x = 121", "output": "true"},
+      {"input": "x = -121", "output": "false", "explanation": "Reads as 121- from right to left."},
+      {"input": "x = 10", "output": "false"}
+    ],
+    "constraints": ["-2^31 <= x <= 2^31 - 1"],
+    "test_cases": [
+      {"input": [121], "expected": true},
+      {"input": [-121], "expected": false},
+      {"input": [10], "expected": false},
+      {"input": [0], "expected": true}
+    ],
+    "function_name": "isPalindrome",
+    "ts_template": "function isPalindrome(x: number): boolean {\n    \n}",
+    "go_template": "func isPalindrome(x int) bool {\n    return false\n}",
+    "cs_template": "    public bool IsPalindrome(int x) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 11,
+    "title": "Container With Most Water",
+    "difficulty": "Medium",
+    "tags": ["Array", "Two Pointers", "Greedy"],
+    "description": "You are given an integer array height of length n. There are n vertical lines drawn. Find two lines that together with the x-axis form a container that contains the most water. Return the maximum amount of water a container can store.",
+    "examples": [
+      {"input": "height = [1,8,6,2,5,4,8,3,7]", "output": "49"},
+      {"input": "height = [1,1]", "output": "1"}
+    ],
+    "constraints": ["n == height.length", "2 <= n <= 10^5", "0 <= height[i] <= 10^4"],
+    "test_cases": [
+      {"input": [[1,8,6,2,5,4,8,3,7]], "expected": 49},
+      {"input": [[1,1]], "expected": 1}
+    ],
+    "function_name": "maxArea",
+    "ts_template": "function maxArea(height: number[]): number {\n    \n}",
+    "go_template": "func maxArea(height []int) int {\n    return 0\n}",
+    "cs_template": "    public int MaxArea(int[] height) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 12,
+    "title": "Integer to Roman",
+    "difficulty": "Medium",
+    "tags": ["Hash Table", "Math", "String"],
+    "description": "Given an integer, convert it to a roman numeral.",
+    "examples": [
+      {"input": "num = 3749", "output": "\"MMMDCCXLIX\""},
+      {"input": "num = 58", "output": "\"LVIII\""},
+      {"input": "num = 1994", "output": "\"MCMXCIV\""}
+    ],
+    "constraints": ["1 <= num <= 3999"],
+    "test_cases": [
+      {"input": [3], "expected": "III"},
+      {"input": [58], "expected": "LVIII"},
+      {"input": [1994], "expected": "MCMXCIV"}
+    ],
+    "function_name": "intToRoman",
+    "ts_template": "function intToRoman(num: number): string {\n    \n}",
+    "go_template": "func intToRoman(num int) string {\n    return \"\"\n}",
+    "cs_template": "    public string IntToRoman(int num) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 13,
+    "title": "Roman to Integer",
+    "difficulty": "Easy",
+    "tags": ["Hash Table", "Math", "String"],
+    "description": "Given a roman numeral, convert it to an integer. Roman numerals are represented by seven different symbols: I(1), V(5), X(10), L(50), C(100), D(500), M(1000). Subtraction rules apply for IV(4), IX(9), XL(40), XC(90), CD(400), CM(900).",
+    "examples": [
+      {"input": "s = \"III\"", "output": "3"},
+      {"input": "s = \"LVIII\"", "output": "58"},
+      {"input": "s = \"MCMXCIV\"", "output": "1994"}
+    ],
+    "constraints": ["1 <= s.length <= 15", "s contains only the characters ('I','V','X','L','C','D','M')"],
+    "test_cases": [
+      {"input": ["III"], "expected": 3},
+      {"input": ["LVIII"], "expected": 58},
+      {"input": ["MCMXCIV"], "expected": 1994}
+    ],
+    "function_name": "romanToInt",
+    "ts_template": "function romanToInt(s: string): number {\n    \n}",
+    "go_template": "func romanToInt(s string) int {\n    return 0\n}",
+    "cs_template": "    public int RomanToInt(string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 14,
+    "title": "Longest Common Prefix",
+    "difficulty": "Easy",
+    "tags": ["String", "Trie"],
+    "description": "Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string \"\".",
+    "examples": [
+      {"input": "strs = [\"flower\",\"flow\",\"flight\"]", "output": "\"fl\""},
+      {"input": "strs = [\"dog\",\"racecar\",\"car\"]", "output": "\"\""}
+    ],
+    "constraints": ["1 <= strs.length <= 200", "0 <= strs[i].length <= 200"],
+    "test_cases": [
+      {"input": [["flower","flow","flight"]], "expected": "fl"},
+      {"input": [["dog","racecar","car"]], "expected": ""},
+      {"input": [["interview"]], "expected": "interview"}
+    ],
+    "function_name": "longestCommonPrefix",
+    "ts_template": "function longestCommonPrefix(strs: string[]): string {\n    \n}",
+    "go_template": "func longestCommonPrefix(strs []string) string {\n    return \"\"\n}",
+    "cs_template": "    public string LongestCommonPrefix(string[] strs) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 15,
+    "title": "3Sum",
+    "difficulty": "Medium",
+    "tags": ["Array", "Two Pointers", "Sorting"],
+    "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, j != k, and nums[i] + nums[j] + nums[k] == 0. The solution set must not contain duplicate triplets.",
+    "examples": [
+      {"input": "nums = [-1,0,1,2,-1,-4]", "output": "[[-1,-1,2],[-1,0,1]]"},
+      {"input": "nums = [0,1,1]", "output": "[]"},
+      {"input": "nums = [0,0,0]", "output": "[[0,0,0]]"}
+    ],
+    "constraints": ["3 <= nums.length <= 3000", "-10^5 <= nums[i] <= 10^5"],
+    "test_cases": [
+      {"input": [[-1,0,1,2,-1,-4]], "expected": [[-1,-1,2],[-1,0,1]]},
+      {"input": [[0,0,0]], "expected": [[0,0,0]]},
+      {"input": [[0,1,1]], "expected": []}
+    ],
+    "function_name": "threeSum",
+    "ts_template": "function threeSum(nums: number[]): number[][] {\n    \n}",
+    "go_template": "func threeSum(nums []int) [][]int {\n    return nil\n}",
+    "cs_template": "    public IList<IList<int>> ThreeSum(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 17,
+    "title": "Letter Combinations of a Phone Number",
+    "difficulty": "Medium",
+    "tags": ["Hash Table", "String", "Backtracking"],
+    "description": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order. (2:abc, 3:def, 4:ghi, 5:jkl, 6:mno, 7:pqrs, 8:tuv, 9:wxyz)",
+    "examples": [
+      {"input": "digits = \"23\"", "output": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"},
+      {"input": "digits = \"\"", "output": "[]"}
+    ],
+    "constraints": ["0 <= digits.length <= 4", "digits[i] is a digit in the range ['2', '9']."],
+    "test_cases": [
+      {"input": [""], "expected": []},
+      {"input": ["2"], "expected": ["a","b","c"]}
+    ],
+    "function_name": "letterCombinations",
+    "ts_template": "function letterCombinations(digits: string): string[] {\n    \n}",
+    "go_template": "func letterCombinations(digits string) []string {\n    return nil\n}",
+    "cs_template": "    public IList<string> LetterCombinations(string digits) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 19,
+    "title": "Remove Nth Node From End of List",
+    "difficulty": "Medium",
+    "tags": ["Linked List", "Two Pointers"],
+    "description": "Given the head of a linked list, remove the nth node from the end of the list and return its head.",
+    "examples": [
+      {"input": "head = [1,2,3,4,5], n = 2", "output": "[1,2,3,5]"},
+      {"input": "head = [1], n = 1", "output": "[]"}
+    ],
+    "constraints": ["The number of nodes in the list is sz.", "1 <= sz <= 30", "1 <= n <= sz"],
+    "test_cases": [],
+    "function_name": "removeNthFromEnd",
+    "ts_template": "class ListNode {\n    val: number;\n    next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc removeNthFromEnd(head *ListNode, n int) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode RemoveNthFromEnd(ListNode head, int n) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 20,
+    "title": "Valid Parentheses",
+    "difficulty": "Easy",
+    "tags": ["String", "Stack"],
+    "description": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if open brackets are closed by the same type and in the correct order.",
+    "examples": [
+      {"input": "s = \"()\"", "output": "true"},
+      {"input": "s = \"()[]{}\"", "output": "true"},
+      {"input": "s = \"(]\"", "output": "false"}
+    ],
+    "constraints": ["1 <= s.length <= 10^4", "s consists of parentheses only '()[]{}'."],
+    "test_cases": [
+      {"input": ["()"], "expected": true},
+      {"input": ["()[]{}"], "expected": true},
+      {"input": ["(]"], "expected": false},
+      {"input": ["([])"], "expected": true},
+      {"input": ["{[]}"], "expected": true}
+    ],
+    "function_name": "isValid",
+    "ts_template": "function isValid(s: string): boolean {\n    \n}",
+    "go_template": "func isValid(s string) bool {\n    return false\n}",
+    "cs_template": "    public bool IsValid(string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 21,
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "Easy",
+    "tags": ["Linked List", "Recursion"],
+    "description": "You are given the heads of two sorted linked lists list1 and list2. Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists. Return the head of the merged linked list.",
+    "examples": [
+      {"input": "list1 = [1,2,4], list2 = [1,3,4]", "output": "[1,1,2,3,4,4]"},
+      {"input": "list1 = [], list2 = []", "output": "[]"},
+      {"input": "list1 = [], list2 = [0]", "output": "[0]"}
+    ],
+    "constraints": ["The number of nodes in both lists is in the range [0, 50]", "-100 <= Node.val <= 100"],
+    "test_cases": [],
+    "function_name": "mergeTwoLists",
+    "ts_template": "class ListNode {\n    val: number;\n    next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode MergeTwoLists(ListNode list1, ListNode list2) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 23,
+    "title": "Merge k Sorted Lists",
+    "difficulty": "Hard",
+    "tags": ["Linked List", "Divide and Conquer", "Heap"],
+    "description": "You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.",
+    "examples": [
+      {"input": "lists = [[1,4,5],[1,3,4],[2,6]]", "output": "[1,1,2,3,4,4,5,6]"}
+    ],
+    "constraints": ["k == lists.length", "0 <= k <= 10^4"],
+    "test_cases": [],
+    "function_name": "mergeKLists",
+    "ts_template": "class ListNode {\n    val: number; next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction mergeKLists(lists: Array<ListNode | null>): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc mergeKLists(lists []*ListNode) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode MergeKLists(ListNode[] lists) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 25,
+    "title": "Reverse Nodes in k-Group",
+    "difficulty": "Hard",
+    "tags": ["Linked List", "Recursion"],
+    "description": "Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as it is.",
+    "examples": [
+      {"input": "head = [1,2,3,4,5], k = 2", "output": "[2,1,4,3,5]"},
+      {"input": "head = [1,2,3,4,5], k = 3", "output": "[3,2,1,4,5]"}
+    ],
+    "constraints": ["1 <= k <= n <= 5000"],
+    "test_cases": [],
+    "function_name": "reverseKGroup",
+    "ts_template": "class ListNode {\n    val: number; next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction reverseKGroup(head: ListNode | null, k: number): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc reverseKGroup(head *ListNode, k int) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode ReverseKGroup(ListNode head, int k) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 26,
+    "title": "Remove Duplicates from Sorted Array",
+    "difficulty": "Easy",
+    "tags": ["Array", "Two Pointers"],
+    "description": "Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. Return k after placing the first k elements in nums.",
+    "examples": [
+      {"input": "nums = [1,1,2]", "output": "2, nums = [1,2,_]"},
+      {"input": "nums = [0,0,1,1,1,2,2,3,3,4]", "output": "5, nums = [0,1,2,3,4,_,_,_,_,_]"}
+    ],
+    "constraints": ["1 <= nums.length <= 3 * 10^4", "nums is sorted in non-decreasing order."],
+    "test_cases": [
+      {"input": [[1,1,2]], "expected": 2},
+      {"input": [[0,0,1,1,1,2,2,3,3,4]], "expected": 5},
+      {"input": [[1]], "expected": 1}
+    ],
+    "function_name": "removeDuplicates",
+    "ts_template": "function removeDuplicates(nums: number[]): number {\n    \n}",
+    "go_template": "func removeDuplicates(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int RemoveDuplicates(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 27,
+    "title": "Remove Element",
+    "difficulty": "Easy",
+    "tags": ["Array", "Two Pointers"],
+    "description": "Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. Return k, the number of elements in nums which are not equal to val.",
+    "examples": [
+      {"input": "nums = [3,2,2,3], val = 3", "output": "2"},
+      {"input": "nums = [0,1,2,2,3,0,4,2], val = 2", "output": "5"}
+    ],
+    "constraints": ["0 <= nums.length <= 100", "0 <= nums[i] <= 50"],
+    "test_cases": [
+      {"input": [[3,2,2,3], 3], "expected": 2},
+      {"input": [[0,1,2,2,3,0,4,2], 2], "expected": 5}
+    ],
+    "function_name": "removeElement",
+    "ts_template": "function removeElement(nums: number[], val: number): number {\n    \n}",
+    "go_template": "func removeElement(nums []int, val int) int {\n    return 0\n}",
+    "cs_template": "    public int RemoveElement(int[] nums, int val) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 28,
+    "title": "Find the Index of the First Occurrence in a String",
+    "difficulty": "Easy",
+    "tags": ["String", "Two Pointers", "String Matching"],
+    "description": "Given two strings haystack and needle, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.",
+    "examples": [
+      {"input": "haystack = \"sadbutsad\", needle = \"sad\"", "output": "0"},
+      {"input": "haystack = \"leetcode\", needle = \"leeto\"", "output": "-1"}
+    ],
+    "constraints": ["1 <= haystack.length, needle.length <= 10^4"],
+    "test_cases": [
+      {"input": ["sadbutsad", "sad"], "expected": 0},
+      {"input": ["leetcode", "leeto"], "expected": -1},
+      {"input": ["hello", "ll"], "expected": 2}
+    ],
+    "function_name": "strStr",
+    "ts_template": "function strStr(haystack: string, needle: string): number {\n    \n}",
+    "go_template": "func strStr(haystack string, needle string) int {\n    return -1\n}",
+    "cs_template": "    public int StrStr(string haystack, string needle) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 30,
+    "title": "Substring with Concatenation of All Words",
+    "difficulty": "Hard",
+    "tags": ["Hash Table", "String", "Sliding Window"],
+    "description": "You are given a string s and an array of strings words. All the strings of words are of the same length. Return all starting indices of substring(s) in s that is a concatenation of each word in words exactly once.",
+    "examples": [
+      {"input": "s = \"barfoothefoobarman\", words = [\"foo\",\"bar\"]", "output": "[0,9]"},
+      {"input": "s = \"wordgoodgoodgoodbestword\", words = [\"word\",\"good\",\"best\",\"word\"]", "output": "[]"}
+    ],
+    "constraints": ["1 <= s.length <= 10^4", "1 <= words.length <= 5000"],
+    "test_cases": [
+      {"input": ["barfoothefoobarman", ["foo","bar"]], "expected": [0,9]},
+      {"input": ["wordgoodgoodgoodbestword", ["word","good","best","word"]], "expected": []}
+    ],
+    "function_name": "findSubstring",
+    "ts_template": "function findSubstring(s: string, words: string[]): number[] {\n    \n}",
+    "go_template": "func findSubstring(s string, words []string) []int {\n    return nil\n}",
+    "cs_template": "    public IList<int> FindSubstring(string s, string[] words) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 33,
+    "title": "Search in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "tags": ["Array", "Binary Search"],
+    "description": "Given a rotated sorted array nums with no duplicates and an integer target, return the index of target if it is in nums, or -1 if it is not in nums. Must run in O(log n).",
+    "examples": [
+      {"input": "nums = [4,5,6,7,0,1,2], target = 0", "output": "4"},
+      {"input": "nums = [4,5,6,7,0,1,2], target = 3", "output": "-1"}
+    ],
+    "constraints": ["1 <= nums.length <= 5000", "All values of nums are unique."],
+    "test_cases": [
+      {"input": [[4,5,6,7,0,1,2], 0], "expected": 4},
+      {"input": [[4,5,6,7,0,1,2], 3], "expected": -1},
+      {"input": [[1], 0], "expected": -1}
+    ],
+    "function_name": "search",
+    "ts_template": "function search(nums: number[], target: number): number {\n    \n}",
+    "go_template": "func search(nums []int, target int) int {\n    return -1\n}",
+    "cs_template": "    public int Search(int[] nums, int target) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 34,
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "difficulty": "Medium",
+    "tags": ["Array", "Binary Search"],
+    "description": "Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value. If target is not found in the array, return [-1, -1]. Must run in O(log n).",
+    "examples": [
+      {"input": "nums = [5,7,7,8,8,10], target = 8", "output": "[3,4]"},
+      {"input": "nums = [5,7,7,8,8,10], target = 6", "output": "[-1,-1]"}
+    ],
+    "constraints": ["0 <= nums.length <= 10^5", "nums is sorted in non-decreasing order."],
+    "test_cases": [
+      {"input": [[5,7,7,8,8,10], 8], "expected": [3,4]},
+      {"input": [[5,7,7,8,8,10], 6], "expected": [-1,-1]},
+      {"input": [[], 0], "expected": [-1,-1]}
+    ],
+    "function_name": "searchRange",
+    "ts_template": "function searchRange(nums: number[], target: number): number[] {\n    \n}",
+    "go_template": "func searchRange(nums []int, target int) []int {\n    return []int{-1, -1}\n}",
+    "cs_template": "    public int[] SearchRange(int[] nums, int target) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 35,
+    "title": "Search Insert Position",
+    "difficulty": "Easy",
+    "tags": ["Array", "Binary Search"],
+    "description": "Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order. Must run in O(log n).",
+    "examples": [
+      {"input": "nums = [1,3,5,6], target = 5", "output": "2"},
+      {"input": "nums = [1,3,5,6], target = 2", "output": "1"},
+      {"input": "nums = [1,3,5,6], target = 7", "output": "4"}
+    ],
+    "constraints": ["1 <= nums.length <= 10^4", "All values are distinct."],
+    "test_cases": [
+      {"input": [[1,3,5,6], 5], "expected": 2},
+      {"input": [[1,3,5,6], 2], "expected": 1},
+      {"input": [[1,3,5,6], 7], "expected": 4},
+      {"input": [[1,3,5,6], 0], "expected": 0}
+    ],
+    "function_name": "searchInsert",
+    "ts_template": "function searchInsert(nums: number[], target: number): number {\n    \n}",
+    "go_template": "func searchInsert(nums []int, target int) int {\n    return 0\n}",
+    "cs_template": "    public int SearchInsert(int[] nums, int target) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 36,
+    "title": "Valid Sudoku",
+    "difficulty": "Medium",
+    "tags": ["Array", "Hash Table", "Matrix"],
+    "description": "Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the rules: each row/column/3x3 box must contain the digits 1-9 without repetition.",
+    "examples": [
+      {"input": "board = (see leetcode)", "output": "true or false"}
+    ],
+    "constraints": ["board.length == 9", "board[i].length == 9", "board[i][j] is a digit 1-9 or '.'."],
+    "test_cases": [],
+    "function_name": "isValidSudoku",
+    "ts_template": "function isValidSudoku(board: string[][]): boolean {\n    \n}",
+    "go_template": "func isValidSudoku(board [][]byte) bool {\n    return false\n}",
+    "cs_template": "    public bool IsValidSudoku(char[][] board) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 39,
+    "title": "Combination Sum",
+    "difficulty": "Medium",
+    "tags": ["Array", "Backtracking"],
+    "description": "Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target. The same number may be chosen from candidates an unlimited number of times.",
+    "examples": [
+      {"input": "candidates = [2,3,6,7], target = 7", "output": "[[2,2,3],[7]]"},
+      {"input": "candidates = [2,3,5], target = 8", "output": "[[2,2,2,2],[2,3,3],[3,5]]"}
+    ],
+    "constraints": ["1 <= candidates.length <= 30", "2 <= candidates[i] <= 40", "1 <= target <= 40"],
+    "test_cases": [
+      {"input": [[2,3,6,7], 7], "expected": [[2,2,3],[7]]},
+      {"input": [[2,3,5], 8], "expected": [[2,2,2,2],[2,3,3],[3,5]]}
+    ],
+    "function_name": "combinationSum",
+    "ts_template": "function combinationSum(candidates: number[], target: number): number[][] {\n    \n}",
+    "go_template": "func combinationSum(candidates []int, target int) [][]int {\n    return nil\n}",
+    "cs_template": "    public IList<IList<int>> CombinationSum(int[] candidates, int target) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 42,
+    "title": "Trapping Rain Water",
+    "difficulty": "Hard",
+    "tags": ["Array", "Two Pointers", "Dynamic Programming", "Stack"],
+    "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+    "examples": [
+      {"input": "height = [0,1,0,2,1,0,1,3,2,1,2,1]", "output": "6"},
+      {"input": "height = [4,2,0,3,2,5]", "output": "9"}
+    ],
+    "constraints": ["n == height.length", "1 <= n <= 2 * 10^4", "0 <= height[i] <= 10^5"],
+    "test_cases": [
+      {"input": [[0,1,0,2,1,0,1,3,2,1,2,1]], "expected": 6},
+      {"input": [[4,2,0,3,2,5]], "expected": 9}
+    ],
+    "function_name": "trap",
+    "ts_template": "function trap(height: number[]): number {\n    \n}",
+    "go_template": "func trap(height []int) int {\n    return 0\n}",
+    "cs_template": "    public int Trap(int[] height) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 45,
+    "title": "Jump Game II",
+    "difficulty": "Medium",
+    "tags": ["Array", "Dynamic Programming", "Greedy"],
+    "description": "You are given an integer array nums. You are initially positioned at the first index. Each element represents your maximum jump length. Return the minimum number of jumps to reach the last index.",
+    "examples": [
+      {"input": "nums = [2,3,1,1,4]", "output": "2"},
+      {"input": "nums = [2,3,0,1,4]", "output": "2"}
+    ],
+    "constraints": ["1 <= nums.length <= 10^4", "0 <= nums[i] <= 1000"],
+    "test_cases": [
+      {"input": [[2,3,1,1,4]], "expected": 2},
+      {"input": [[2,3,0,1,4]], "expected": 2}
+    ],
+    "function_name": "jump",
+    "ts_template": "function jump(nums: number[]): number {\n    \n}",
+    "go_template": "func jump(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int Jump(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 46,
+    "title": "Permutations",
+    "difficulty": "Medium",
+    "tags": ["Array", "Backtracking"],
+    "description": "Given an array nums of distinct integers, return all the possible permutations. You can return the answer in any order.",
+    "examples": [
+      {"input": "nums = [1,2,3]", "output": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]"},
+      {"input": "nums = [0,1]", "output": "[[0,1],[1,0]]"}
+    ],
+    "constraints": ["1 <= nums.length <= 6", "All integers are unique."],
+    "test_cases": [
+      {"input": [[0,1]], "expected": [[0,1],[1,0]]},
+      {"input": [[1]], "expected": [[1]]}
+    ],
+    "function_name": "permute",
+    "ts_template": "function permute(nums: number[]): number[][] {\n    \n}",
+    "go_template": "func permute(nums []int) [][]int {\n    return nil\n}",
+    "cs_template": "    public IList<IList<int>> Permute(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 48,
+    "title": "Rotate Image",
+    "difficulty": "Medium",
+    "tags": ["Array", "Math", "Matrix"],
+    "description": "You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise) in-place.",
+    "examples": [
+      {"input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]", "output": "[[7,4,1],[8,5,2],[9,6,3]]"}
+    ],
+    "constraints": ["n == matrix.length == matrix[i].length", "1 <= n <= 20"],
+    "test_cases": [
+      {"input": [[[1,2,3],[4,5,6],[7,8,9]]], "expected": [[7,4,1],[8,5,2],[9,6,3]]},
+      {"input": [[[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]], "expected": [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]}
+    ],
+    "function_name": "rotate",
+    "ts_template": "function rotate(matrix: number[][]): void {\n    \n}",
+    "go_template": "func rotate(matrix [][]int) {\n    \n}",
+    "cs_template": "    public void Rotate(int[][] matrix) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 49,
+    "title": "Group Anagrams",
+    "difficulty": "Medium",
+    "tags": ["Array", "Hash Table", "String", "Sorting"],
+    "description": "Given an array of strings strs, group the anagrams together. You can return the answer in any order.",
+    "examples": [
+      {"input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]", "output": "[[\"bat\"],[\"nat\",\"tan\"],[\"ate\",\"eat\",\"tea\"]]"},
+      {"input": "strs = [\"\"]", "output": "[[\"\"]]"}
+    ],
+    "constraints": ["1 <= strs.length <= 10^4", "0 <= strs[i].length <= 100"],
+    "test_cases": [
+      {"input": [["eat","tea","tan","ate","nat","bat"]], "expected": [["bat"],["nat","tan"],["ate","eat","tea"]]},
+      {"input": [[""]], "expected": [[""]]},
+      {"input": [["a"]], "expected": [["a"]]}
+    ],
+    "function_name": "groupAnagrams",
+    "ts_template": "function groupAnagrams(strs: string[]): string[][] {\n    \n}",
+    "go_template": "func groupAnagrams(strs []string) [][]string {\n    return nil\n}",
+    "cs_template": "    public IList<IList<string>> GroupAnagrams(string[] strs) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 50,
+    "title": "Pow(x, n)",
+    "difficulty": "Medium",
+    "tags": ["Math", "Recursion"],
+    "description": "Implement pow(x, n), which calculates x raised to the power n.",
+    "examples": [
+      {"input": "x = 2.00000, n = 10", "output": "1024.00000"},
+      {"input": "x = 2.10000, n = 3", "output": "9.26100"},
+      {"input": "x = 2.00000, n = -2", "output": "0.25000"}
+    ],
+    "constraints": ["-100.0 < x < 100.0", "-2^31 <= n <= 2^31-1"],
+    "test_cases": [
+      {"input": [2.0, 10], "expected": 1024.0},
+      {"input": [2.0, -2], "expected": 0.25}
+    ],
+    "function_name": "myPow",
+    "ts_template": "function myPow(x: number, n: number): number {\n    \n}",
+    "go_template": "func myPow(x float64, n int) float64 {\n    return 0\n}",
+    "cs_template": "    public double MyPow(double x, int n) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 52,
+    "title": "N-Queens II",
+    "difficulty": "Hard",
+    "tags": ["Backtracking"],
+    "description": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other. Return the number of distinct solutions to the n-queens puzzle.",
+    "examples": [
+      {"input": "n = 4", "output": "2"},
+      {"input": "n = 1", "output": "1"}
+    ],
+    "constraints": ["1 <= n <= 9"],
+    "test_cases": [
+      {"input": [4], "expected": 2},
+      {"input": [1], "expected": 1},
+      {"input": [8], "expected": 92}
+    ],
+    "function_name": "totalNQueens",
+    "ts_template": "function totalNQueens(n: number): number {\n    \n}",
+    "go_template": "func totalNQueens(n int) int {\n    return 0\n}",
+    "cs_template": "    public int TotalNQueens(int n) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 53,
+    "title": "Maximum Subarray",
+    "difficulty": "Medium",
+    "tags": ["Array", "Divide and Conquer", "Dynamic Programming"],
+    "description": "Given an integer array nums, find the subarray with the largest sum, and return its sum.",
+    "examples": [
+      {"input": "nums = [-2,1,-3,4,-1,2,1,-5,4]", "output": "6", "explanation": "Subarray [4,-1,2,1] has the largest sum 6."},
+      {"input": "nums = [1]", "output": "1"},
+      {"input": "nums = [5,4,-1,7,8]", "output": "23"}
+    ],
+    "constraints": ["1 <= nums.length <= 10^5", "-10^4 <= nums[i] <= 10^4"],
+    "test_cases": [
+      {"input": [[-2,1,-3,4,-1,2,1,-5,4]], "expected": 6},
+      {"input": [[1]], "expected": 1},
+      {"input": [[5,4,-1,7,8]], "expected": 23}
+    ],
+    "function_name": "maxSubArray",
+    "ts_template": "function maxSubArray(nums: number[]): number {\n    \n}",
+    "go_template": "func maxSubArray(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int MaxSubArray(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 54,
+    "title": "Spiral Matrix",
+    "difficulty": "Medium",
+    "tags": ["Array", "Matrix", "Simulation"],
+    "description": "Given an m x n matrix, return all elements of the matrix in spiral order.",
+    "examples": [
+      {"input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]", "output": "[1,2,3,6,9,8,7,4,5]"},
+      {"input": "matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]", "output": "[1,2,3,4,8,12,11,10,9,5,6,7]"}
+    ],
+    "constraints": ["m == matrix.length", "n == matrix[i].length", "1 <= m, n <= 10"],
+    "test_cases": [
+      {"input": [[[1,2,3],[4,5,6],[7,8,9]]], "expected": [1,2,3,6,9,8,7,4,5]},
+      {"input": [[[1,2,3,4],[5,6,7,8],[9,10,11,12]]], "expected": [1,2,3,4,8,12,11,10,9,5,6,7]}
+    ],
+    "function_name": "spiralOrder",
+    "ts_template": "function spiralOrder(matrix: number[][]): number[] {\n    \n}",
+    "go_template": "func spiralOrder(matrix [][]int) []int {\n    return nil\n}",
+    "cs_template": "    public IList<int> SpiralOrder(int[][] matrix) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 55,
+    "title": "Jump Game",
+    "difficulty": "Medium",
+    "tags": ["Array", "Dynamic Programming", "Greedy"],
+    "description": "You are given an integer array nums. You are initially positioned at index 0. Each element represents the maximum jump length at that position. Return true if you can reach the last index, or false otherwise.",
+    "examples": [
+      {"input": "nums = [2,3,1,1,4]", "output": "true"},
+      {"input": "nums = [3,2,1,0,4]", "output": "false"}
+    ],
+    "constraints": ["1 <= nums.length <= 10^4", "0 <= nums[i] <= 10^5"],
+    "test_cases": [
+      {"input": [[2,3,1,1,4]], "expected": true},
+      {"input": [[3,2,1,0,4]], "expected": false}
+    ],
+    "function_name": "canJump",
+    "ts_template": "function canJump(nums: number[]): boolean {\n    \n}",
+    "go_template": "func canJump(nums []int) bool {\n    return false\n}",
+    "cs_template": "    public bool CanJump(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 56,
+    "title": "Merge Intervals",
+    "difficulty": "Medium",
+    "tags": ["Array", "Sorting"],
+    "description": "Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.",
+    "examples": [
+      {"input": "intervals = [[1,3],[2,6],[8,10],[15,18]]", "output": "[[1,6],[8,10],[15,18]]"},
+      {"input": "intervals = [[1,4],[4,5]]", "output": "[[1,5]]"}
+    ],
+    "constraints": ["1 <= intervals.length <= 10^4"],
+    "test_cases": [
+      {"input": [[[1,3],[2,6],[8,10],[15,18]]], "expected": [[1,6],[8,10],[15,18]]},
+      {"input": [[[1,4],[4,5]]], "expected": [[1,5]]}
+    ],
+    "function_name": "merge",
+    "ts_template": "function merge(intervals: number[][]): number[][] {\n    \n}",
+    "go_template": "func merge(intervals [][]int) [][]int {\n    return nil\n}",
+    "cs_template": "    public int[][] Merge(int[][] intervals) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 57,
+    "title": "Insert Interval",
+    "difficulty": "Medium",
+    "tags": ["Array"],
+    "description": "You are given an array of non-overlapping intervals sorted by start time, and a newInterval. Insert newInterval into intervals and merge if necessary. Return the resulting intervals.",
+    "examples": [
+      {"input": "intervals = [[1,3],[6,9]], newInterval = [2,5]", "output": "[[1,5],[6,9]]"},
+      {"input": "intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]", "output": "[[1,2],[3,10],[12,16]]"}
+    ],
+    "constraints": ["0 <= intervals.length <= 10^4"],
+    "test_cases": [
+      {"input": [[[1,3],[6,9]], [2,5]], "expected": [[1,5],[6,9]]},
+      {"input": [[[1,2],[3,5],[6,7],[8,10],[12,16]], [4,8]], "expected": [[1,2],[3,10],[12,16]]}
+    ],
+    "function_name": "insert",
+    "ts_template": "function insert(intervals: number[][], newInterval: number[]): number[][] {\n    \n}",
+    "go_template": "func insert(intervals [][]int, newInterval []int) [][]int {\n    return nil\n}",
+    "cs_template": "    public int[][] Insert(int[][] intervals, int[] newInterval) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 58,
+    "title": "Length of Last Word",
+    "difficulty": "Easy",
+    "tags": ["String"],
+    "description": "Given a string s consisting of words and spaces, return the length of the last word in the string.",
+    "examples": [
+      {"input": "s = \"Hello World\"", "output": "5"},
+      {"input": "s = \"   fly me   to   the moon  \"", "output": "4"},
+      {"input": "s = \"luffy is still joyboy\"", "output": "6"}
+    ],
+    "constraints": ["1 <= s.length <= 10^4", "s consists of only English letters and spaces."],
+    "test_cases": [
+      {"input": ["Hello World"], "expected": 5},
+      {"input": ["   fly me   to   the moon  "], "expected": 4},
+      {"input": ["luffy is still joyboy"], "expected": 6}
+    ],
+    "function_name": "lengthOfLastWord",
+    "ts_template": "function lengthOfLastWord(s: string): number {\n    \n}",
+    "go_template": "func lengthOfLastWord(s string) int {\n    return 0\n}",
+    "cs_template": "    public int LengthOfLastWord(string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 61,
+    "title": "Rotate List",
+    "difficulty": "Medium",
+    "tags": ["Linked List", "Two Pointers"],
+    "description": "Given the head of a linked list, rotate the list to the right by k places.",
+    "examples": [
+      {"input": "head = [1,2,3,4,5], k = 2", "output": "[4,5,1,2,3]"},
+      {"input": "head = [0,1,2], k = 4", "output": "[2,0,1]"}
+    ],
+    "constraints": ["0 <= k <= 2 * 10^9"],
+    "test_cases": [],
+    "function_name": "rotateRight",
+    "ts_template": "class ListNode {\n    val: number; next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction rotateRight(head: ListNode | null, k: number): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc rotateRight(head *ListNode, k int) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode RotateRight(ListNode head, int k) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 62,
+    "title": "Unique Paths",
+    "difficulty": "Medium",
+    "tags": ["Math", "Dynamic Programming", "Combinatorics"],
+    "description": "There is a robot on an m x n grid. The robot can only move either down or right. How many unique paths are there from the top-left corner to the bottom-right corner?",
+    "examples": [
+      {"input": "m = 3, n = 7", "output": "28"},
+      {"input": "m = 3, n = 2", "output": "3"}
+    ],
+    "constraints": ["1 <= m, n <= 100"],
+    "test_cases": [
+      {"input": [3, 7], "expected": 28},
+      {"input": [3, 2], "expected": 3},
+      {"input": [1, 1], "expected": 1}
+    ],
+    "function_name": "uniquePaths",
+    "ts_template": "function uniquePaths(m: number, n: number): number {\n    \n}",
+    "go_template": "func uniquePaths(m int, n int) int {\n    return 0\n}",
+    "cs_template": "    public int UniquePaths(int m, int n) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 63,
+    "title": "Unique Paths II",
+    "difficulty": "Medium",
+    "tags": ["Array", "Dynamic Programming", "Matrix"],
+    "description": "A robot tries to navigate from top-left to bottom-right of an m x n grid with obstacles. Return the number of unique paths. obstacleGrid[i][j] == 1 means obstacle.",
+    "examples": [
+      {"input": "obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]", "output": "2"},
+      {"input": "obstacleGrid = [[0,1],[0,0]]", "output": "1"}
+    ],
+    "constraints": ["m == obstacleGrid.length", "n == obstacleGrid[i].length", "1 <= m, n <= 100"],
+    "test_cases": [
+      {"input": [[[0,0,0],[0,1,0],[0,0,0]]], "expected": 2},
+      {"input": [[[0,1],[0,0]]], "expected": 1}
+    ],
+    "function_name": "uniquePathsWithObstacles",
+    "ts_template": "function uniquePathsWithObstacles(obstacleGrid: number[][]): number {\n    \n}",
+    "go_template": "func uniquePathsWithObstacles(obstacleGrid [][]int) int {\n    return 0\n}",
+    "cs_template": "    public int UniquePathsWithObstacles(int[][] obstacleGrid) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 64,
+    "title": "Minimum Path Sum",
+    "difficulty": "Medium",
+    "tags": ["Array", "Dynamic Programming", "Matrix"],
+    "description": "Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path. You can only move right or down.",
+    "examples": [
+      {"input": "grid = [[1,3,1],[1,5,1],[4,2,1]]", "output": "7"},
+      {"input": "grid = [[1,2,3],[4,5,6]]", "output": "12"}
+    ],
+    "constraints": ["m == grid.length", "n == grid[i].length", "1 <= m, n <= 200"],
+    "test_cases": [
+      {"input": [[[1,3,1],[1,5,1],[4,2,1]]], "expected": 7},
+      {"input": [[[1,2,3],[4,5,6]]], "expected": 12}
+    ],
+    "function_name": "minPathSum",
+    "ts_template": "function minPathSum(grid: number[][]): number {\n    \n}",
+    "go_template": "func minPathSum(grid [][]int) int {\n    return 0\n}",
+    "cs_template": "    public int MinPathSum(int[][] grid) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 66,
+    "title": "Plus One",
+    "difficulty": "Easy",
+    "tags": ["Array", "Math"],
+    "description": "You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. Increment the large integer by one and return the resulting array of digits.",
+    "examples": [
+      {"input": "digits = [1,2,3]", "output": "[1,2,4]"},
+      {"input": "digits = [4,3,2,1]", "output": "[4,3,2,2]"},
+      {"input": "digits = [9]", "output": "[1,0]"}
+    ],
+    "constraints": ["1 <= digits.length <= 100", "0 <= digits[i] <= 9"],
+    "test_cases": [
+      {"input": [[1,2,3]], "expected": [1,2,4]},
+      {"input": [[9]], "expected": [1,0]},
+      {"input": [[9,9]], "expected": [1,0,0]}
+    ],
+    "function_name": "plusOne",
+    "ts_template": "function plusOne(digits: number[]): number[] {\n    \n}",
+    "go_template": "func plusOne(digits []int) []int {\n    return nil\n}",
+    "cs_template": "    public int[] PlusOne(int[] digits) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 67,
+    "title": "Add Binary",
+    "difficulty": "Easy",
+    "tags": ["Math", "String", "Bit Manipulation", "Simulation"],
+    "description": "Given two binary strings a and b, return their sum as a binary string.",
+    "examples": [
+      {"input": "a = \"11\", b = \"1\"", "output": "\"100\""},
+      {"input": "a = \"1010\", b = \"1011\"", "output": "\"10101\""}
+    ],
+    "constraints": ["1 <= a.length, b.length <= 10^4", "a and b consist only of '0' or '1' characters."],
+    "test_cases": [
+      {"input": ["11", "1"], "expected": "100"},
+      {"input": ["1010", "1011"], "expected": "10101"},
+      {"input": ["0", "0"], "expected": "0"}
+    ],
+    "function_name": "addBinary",
+    "ts_template": "function addBinary(a: string, b: string): string {\n    \n}",
+    "go_template": "func addBinary(a string, b string) string {\n    return \"\"\n}",
+    "cs_template": "    public string AddBinary(string a, string b) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 69,
+    "title": "Sqrt(x)",
+    "difficulty": "Easy",
+    "tags": ["Math", "Binary Search"],
+    "description": "Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well. Do not use built-in exponent or square root functions.",
+    "examples": [
+      {"input": "x = 4", "output": "2"},
+      {"input": "x = 8", "output": "2", "explanation": "The square root of 8 is 2.828..., and since we round it down, 2 is returned."}
+    ],
+    "constraints": ["0 <= x <= 2^31 - 1"],
+    "test_cases": [
+      {"input": [4], "expected": 2},
+      {"input": [8], "expected": 2},
+      {"input": [0], "expected": 0},
+      {"input": [1], "expected": 1}
+    ],
+    "function_name": "mySqrt",
+    "ts_template": "function mySqrt(x: number): number {\n    \n}",
+    "go_template": "func mySqrt(x int) int {\n    return 0\n}",
+    "cs_template": "    public int MySqrt(int x) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 70,
+    "title": "Climbing Stairs",
+    "difficulty": "Easy",
+    "tags": ["Math", "Dynamic Programming", "Memoization"],
+    "description": "You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+    "examples": [
+      {"input": "n = 2", "output": "2", "explanation": "1+1 or 2"},
+      {"input": "n = 3", "output": "3", "explanation": "1+1+1, 1+2, 2+1"}
+    ],
+    "constraints": ["1 <= n <= 45"],
+    "test_cases": [
+      {"input": [1], "expected": 1},
+      {"input": [2], "expected": 2},
+      {"input": [3], "expected": 3},
+      {"input": [10], "expected": 89}
+    ],
+    "function_name": "climbStairs",
+    "ts_template": "function climbStairs(n: number): number {\n    \n}",
+    "go_template": "func climbStairs(n int) int {\n    return 0\n}",
+    "cs_template": "    public int ClimbStairs(int n) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 71,
+    "title": "Simplify Path",
+    "difficulty": "Medium",
+    "tags": ["String", "Stack"],
+    "description": "Given an absolute path for a Unix-style file system, simplify it. The simplified path must start with '/', and two directory names cannot be separated by more than one '/'.",
+    "examples": [
+      {"input": "path = \"/home/\"", "output": "\"/home\""},
+      {"input": "path = \"/home//foo/\"", "output": "\"/home/foo\""},
+      {"input": "path = \"/home/user/Documents/../Pictures\"", "output": "\"/home/user/Pictures\""}
+    ],
+    "constraints": ["1 <= path.length <= 3000"],
+    "test_cases": [
+      {"input": ["/home/"], "expected": "/home"},
+      {"input": ["/home//foo/"], "expected": "/home/foo"},
+      {"input": ["/home/user/Documents/../Pictures"], "expected": "/home/user/Pictures"},
+      {"input": ["/../"], "expected": "/"}
+    ],
+    "function_name": "simplifyPath",
+    "ts_template": "function simplifyPath(path: string): string {\n    \n}",
+    "go_template": "func simplifyPath(path string) string {\n    return \"\"\n}",
+    "cs_template": "    public string SimplifyPath(string path) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 72,
+    "title": "Edit Distance",
+    "difficulty": "Medium",
+    "tags": ["String", "Dynamic Programming"],
+    "description": "Given two strings word1 and word2, return the minimum number of operations (insert, delete, replace) required to convert word1 to word2.",
+    "examples": [
+      {"input": "word1 = \"horse\", word2 = \"ros\"", "output": "3"},
+      {"input": "word1 = \"intention\", word2 = \"execution\"", "output": "5"}
+    ],
+    "constraints": ["0 <= word1.length, word2.length <= 500"],
+    "test_cases": [
+      {"input": ["horse", "ros"], "expected": 3},
+      {"input": ["intention", "execution"], "expected": 5},
+      {"input": ["", "a"], "expected": 1}
+    ],
+    "function_name": "minDistance",
+    "ts_template": "function minDistance(word1: string, word2: string): number {\n    \n}",
+    "go_template": "func minDistance(word1 string, word2 string) int {\n    return 0\n}",
+    "cs_template": "    public int MinDistance(string word1, string word2) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 73,
+    "title": "Set Matrix Zeroes",
+    "difficulty": "Medium",
+    "tags": ["Array", "Hash Table", "Matrix"],
+    "description": "Given an m x n integer matrix, if an element is 0, set its entire row and column to 0's. Do it in-place.",
+    "examples": [
+      {"input": "matrix = [[1,1,1],[1,0,1],[1,1,1]]", "output": "[[1,0,1],[0,0,0],[1,0,1]]"},
+      {"input": "matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]", "output": "[[0,0,0,0],[0,4,5,0],[0,3,1,0]]"}
+    ],
+    "constraints": ["m == matrix.length", "n == matrix[0].length", "1 <= m, n <= 200"],
+    "test_cases": [
+      {"input": [[[1,1,1],[1,0,1],[1,1,1]]], "expected": [[1,0,1],[0,0,0],[1,0,1]]},
+      {"input": [[[0,1,2,0],[3,4,5,2],[1,3,1,5]]], "expected": [[0,0,0,0],[0,4,5,0],[0,3,1,0]]}
+    ],
+    "function_name": "setZeroes",
+    "ts_template": "function setZeroes(matrix: number[][]): void {\n    \n}",
+    "go_template": "func setZeroes(matrix [][]int) {\n    \n}",
+    "cs_template": "    public void SetZeroes(int[][] matrix) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 74,
+    "title": "Search a 2D Matrix",
+    "difficulty": "Medium",
+    "tags": ["Array", "Binary Search", "Matrix"],
+    "description": "Write an efficient algorithm that searches for a value in an m x n matrix. Each row is sorted left to right and the first integer of each row is greater than the last integer of the previous row.",
+    "examples": [
+      {"input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3", "output": "true"},
+      {"input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13", "output": "false"}
+    ],
+    "constraints": ["m == matrix.length", "n == matrix[i].length", "1 <= m, n <= 100"],
+    "test_cases": [
+      {"input": [[[1,3,5,7],[10,11,16,20],[23,30,34,60]], 3], "expected": true},
+      {"input": [[[1,3,5,7],[10,11,16,20],[23,30,34,60]], 13], "expected": false}
+    ],
+    "function_name": "searchMatrix",
+    "ts_template": "function searchMatrix(matrix: number[][], target: number): boolean {\n    \n}",
+    "go_template": "func searchMatrix(matrix [][]int, target int) bool {\n    return false\n}",
+    "cs_template": "    public bool SearchMatrix(int[][] matrix, int target) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 76,
+    "title": "Minimum Window Substring",
+    "difficulty": "Hard",
+    "tags": ["Hash Table", "String", "Sliding Window"],
+    "description": "Given two strings s and t, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If no such window exists, return empty string.",
+    "examples": [
+      {"input": "s = \"ADOBECODEBANC\", t = \"ABC\"", "output": "\"BANC\""},
+      {"input": "s = \"a\", t = \"a\"", "output": "\"a\""},
+      {"input": "s = \"a\", t = \"aa\"", "output": "\"\""}
+    ],
+    "constraints": ["1 <= s.length, t.length <= 10^5"],
+    "test_cases": [
+      {"input": ["ADOBECODEBANC", "ABC"], "expected": "BANC"},
+      {"input": ["a", "a"], "expected": "a"},
+      {"input": ["a", "aa"], "expected": ""}
+    ],
+    "function_name": "minWindow",
+    "ts_template": "function minWindow(s: string, t: string): string {\n    \n}",
+    "go_template": "func minWindow(s string, t string) string {\n    return \"\"\n}",
+    "cs_template": "    public string MinWindow(string s, string t) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 77,
+    "title": "Combinations",
+    "difficulty": "Medium",
+    "tags": ["Backtracking"],
+    "description": "Given two integers n and k, return all possible combinations of k numbers chosen from the range [1, n]. You may return the answer in any order.",
+    "examples": [
+      {"input": "n = 4, k = 2", "output": "[[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]"},
+      {"input": "n = 1, k = 1", "output": "[[1]]"}
+    ],
+    "constraints": ["1 <= n <= 20", "1 <= k <= n"],
+    "test_cases": [
+      {"input": [1, 1], "expected": [[1]]},
+      {"input": [4, 2], "expected": [[1,2],[1,3],[1,4],[2,3],[2,4],[3,4]]}
+    ],
+    "function_name": "combine",
+    "ts_template": "function combine(n: number, k: number): number[][] {\n    \n}",
+    "go_template": "func combine(n int, k int) [][]int {\n    return nil\n}",
+    "cs_template": "    public IList<IList<int>> Combine(int n, int k) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 79,
+    "title": "Word Search",
+    "difficulty": "Medium",
+    "tags": ["Array", "Backtracking", "Matrix"],
+    "description": "Given an m x n grid of characters board and a string word, return true if word exists in the grid. The word must be constructed from letters of sequentially adjacent cells.",
+    "examples": [
+      {"input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCCED\"", "output": "true"},
+      {"input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"SEE\"", "output": "true"},
+      {"input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCB\"", "output": "false"}
+    ],
+    "constraints": ["m == board.length", "n = board[i].length", "1 <= m, n <= 6"],
+    "test_cases": [],
+    "function_name": "exist",
+    "ts_template": "function exist(board: string[][], word: string): boolean {\n    \n}",
+    "go_template": "func exist(board [][]byte, word string) bool {\n    return false\n}",
+    "cs_template": "    public bool Exist(char[][] board, string word) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 80,
+    "title": "Remove Duplicates from Sorted Array II",
+    "difficulty": "Medium",
+    "tags": ["Array", "Two Pointers"],
+    "description": "Given an integer array nums sorted in non-decreasing order, remove duplicates in-place such that each unique element appears at most twice. Return k after placing the first k elements in nums.",
+    "examples": [
+      {"input": "nums = [1,1,1,2,2,3]", "output": "5, nums = [1,1,2,2,3,_]"},
+      {"input": "nums = [0,0,1,1,1,1,2,3,3]", "output": "7, nums = [0,0,1,1,2,3,3,_,_]"}
+    ],
+    "constraints": ["1 <= nums.length <= 3 * 10^4"],
+    "test_cases": [
+      {"input": [[1,1,1,2,2,3]], "expected": 5},
+      {"input": [[0,0,1,1,1,1,2,3,3]], "expected": 7}
+    ],
+    "function_name": "removeDuplicates",
+    "ts_template": "function removeDuplicates(nums: number[]): number {\n    \n}",
+    "go_template": "func removeDuplicates(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int RemoveDuplicates(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 82,
+    "title": "Remove Duplicates from Sorted List II",
+    "difficulty": "Medium",
+    "tags": ["Linked List", "Two Pointers"],
+    "description": "Given the head of a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.",
+    "examples": [
+      {"input": "head = [1,2,3,3,4,4,5]", "output": "[1,2,5]"},
+      {"input": "head = [1,1,1,2,3]", "output": "[2,3]"}
+    ],
+    "constraints": ["0 <= sz <= 300", "-100 <= Node.val <= 100"],
+    "test_cases": [],
+    "function_name": "deleteDuplicates",
+    "ts_template": "class ListNode {\n    val: number; next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction deleteDuplicates(head: ListNode | null): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc deleteDuplicates(head *ListNode) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode DeleteDuplicates(ListNode head) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 86,
+    "title": "Partition List",
+    "difficulty": "Medium",
+    "tags": ["Linked List", "Two Pointers"],
+    "description": "Given the head of a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x. Preserve the original relative order.",
+    "examples": [
+      {"input": "head = [1,4,3,2,5,2], x = 3", "output": "[1,2,2,4,3,5]"},
+      {"input": "head = [2,1], x = 2", "output": "[1,2]"}
+    ],
+    "constraints": ["0 <= sz <= 200", "-100 <= Node.val <= 100", "-200 <= x <= 200"],
+    "test_cases": [],
+    "function_name": "partition",
+    "ts_template": "class ListNode {\n    val: number; next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction partition(head: ListNode | null, x: number): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc partition(head *ListNode, x int) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode Partition(ListNode head, int x) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 88,
+    "title": "Merge Sorted Array",
+    "difficulty": "Easy",
+    "tags": ["Array", "Two Pointers", "Sorting"],
+    "description": "You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively. Merge nums1 and nums2 into a single sorted array stored in nums1.",
+    "examples": [
+      {"input": "nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3", "output": "[1,2,2,3,5,6]"},
+      {"input": "nums1 = [1], m = 1, nums2 = [], n = 0", "output": "[1]"}
+    ],
+    "constraints": ["nums1.length == m + n", "nums2.length == n", "0 <= m, n <= 200"],
+    "test_cases": [
+      {"input": [[1,2,3,0,0,0], 3, [2,5,6], 3], "expected": [1,2,2,3,5,6]},
+      {"input": [[1], 1, [], 0], "expected": [1]}
+    ],
+    "function_name": "merge",
+    "ts_template": "function merge(nums1: number[], m: number, nums2: number[], n: number): void {\n    \n}",
+    "go_template": "func merge(nums1 []int, m int, nums2 []int, n int) {\n    \n}",
+    "cs_template": "    public void Merge(int[] nums1, int m, int[] nums2, int n) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 92,
+    "title": "Reverse Linked List II",
+    "difficulty": "Medium",
+    "tags": ["Linked List"],
+    "description": "Given the head of a singly linked list and two integers left and right where left <= right, reverse the nodes of the list from position left to position right, and return the reversed list.",
+    "examples": [
+      {"input": "head = [1,2,3,4,5], left = 2, right = 4", "output": "[1,4,3,2,5]"},
+      {"input": "head = [5], left = 1, right = 1", "output": "[5]"}
+    ],
+    "constraints": ["1 <= left <= right <= n <= 500"],
+    "test_cases": [],
+    "function_name": "reverseBetween",
+    "ts_template": "class ListNode {\n    val: number; next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction reverseBetween(head: ListNode | null, left: number, right: number): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc reverseBetween(head *ListNode, left int, right int) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode ReverseBetween(ListNode head, int left, int right) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 97,
+    "title": "Interleaving String",
+    "difficulty": "Medium",
+    "tags": ["String", "Dynamic Programming"],
+    "description": "Given strings s1, s2, and s3, find whether s3 is formed by an interleaving of s1 and s2.",
+    "examples": [
+      {"input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbcbcac\"", "output": "true"},
+      {"input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbbaccc\"", "output": "false"}
+    ],
+    "constraints": ["0 <= s1.length, s2.length <= 100"],
+    "test_cases": [
+      {"input": ["aabcc", "dbbca", "aadbbcbcac"], "expected": true},
+      {"input": ["aabcc", "dbbca", "aadbbbaccc"], "expected": false},
+      {"input": ["", "", ""], "expected": true}
+    ],
+    "function_name": "isInterleave",
+    "ts_template": "function isInterleave(s1: string, s2: string, s3: string): boolean {\n    \n}",
+    "go_template": "func isInterleave(s1 string, s2 string, s3 string) bool {\n    return false\n}",
+    "cs_template": "    public bool IsInterleave(string s1, string s2, string s3) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 98,
+    "title": "Validate Binary Search Tree",
+    "difficulty": "Medium",
+    "tags": ["Tree", "Depth-First Search", "Binary Search Tree"],
+    "description": "Given the root of a binary tree, determine if it is a valid binary search tree (BST). A valid BST: left subtree has only nodes with keys less than root's key, right subtree has only nodes with keys greater than root's key, both subtrees must also be BSTs.",
+    "examples": [
+      {"input": "root = [2,1,3]", "output": "true"},
+      {"input": "root = [5,1,4,null,null,3,6]", "output": "false"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [1, 10^4]."],
+    "test_cases": [],
+    "function_name": "isValidBST",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction isValidBST(root: TreeNode | null): boolean {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc isValidBST(root *TreeNode) bool {\n    return false\n}",
+    "cs_template": "    public bool IsValidBST(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 100,
+    "title": "Same Tree",
+    "difficulty": "Easy",
+    "tags": ["Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree"],
+    "description": "Given the roots of two binary trees p and q, write a function to check if they are the same or not. Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.",
+    "examples": [
+      {"input": "p = [1,2,3], q = [1,2,3]", "output": "true"},
+      {"input": "p = [1,2], q = [1,null,2]", "output": "false"}
+    ],
+    "constraints": ["The number of nodes in both trees is in the range [0, 100]."],
+    "test_cases": [],
+    "function_name": "isSameTree",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc isSameTree(p *TreeNode, q *TreeNode) bool {\n    return false\n}",
+    "cs_template": "    public bool IsSameTree(TreeNode p, TreeNode q) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 101,
+    "title": "Symmetric Tree",
+    "difficulty": "Easy",
+    "tags": ["Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree"],
+    "description": "Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).",
+    "examples": [
+      {"input": "root = [1,2,2,3,4,4,3]", "output": "true"},
+      {"input": "root = [1,2,2,null,3,null,3]", "output": "false"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [1, 1000]."],
+    "test_cases": [],
+    "function_name": "isSymmetric",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction isSymmetric(root: TreeNode | null): boolean {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc isSymmetric(root *TreeNode) bool {\n    return false\n}",
+    "cs_template": "    public bool IsSymmetric(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 102,
+    "title": "Binary Tree Level Order Traversal",
+    "difficulty": "Medium",
+    "tags": ["Tree", "Breadth-First Search", "Binary Tree"],
+    "description": "Given the root of a binary tree, return the level order traversal of its nodes' values (i.e., from left to right, level by level).",
+    "examples": [
+      {"input": "root = [3,9,20,null,null,15,7]", "output": "[[3],[9,20],[15,7]]"},
+      {"input": "root = [1]", "output": "[[1]]"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [0, 2000]."],
+    "test_cases": [],
+    "function_name": "levelOrder",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction levelOrder(root: TreeNode | null): number[][] {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc levelOrder(root *TreeNode) [][]int {\n    return nil\n}",
+    "cs_template": "    public IList<IList<int>> LevelOrder(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 103,
+    "title": "Binary Tree Zigzag Level Order Traversal",
+    "difficulty": "Medium",
+    "tags": ["Tree", "Breadth-First Search", "Binary Tree"],
+    "description": "Given the root of a binary tree, return the zigzag level order traversal of its nodes' values (alternating left-to-right, right-to-left).",
+    "examples": [
+      {"input": "root = [3,9,20,null,null,15,7]", "output": "[[3],[20,9],[15,7]]"}
+    ],
+    "constraints": ["0 <= number of nodes <= 2000"],
+    "test_cases": [],
+    "function_name": "zigzagLevelOrder",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction zigzagLevelOrder(root: TreeNode | null): number[][] {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc zigzagLevelOrder(root *TreeNode) [][]int {\n    return nil\n}",
+    "cs_template": "    public IList<IList<int>> ZigzagLevelOrder(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 104,
+    "title": "Maximum Depth of Binary Tree",
+    "difficulty": "Easy",
+    "tags": ["Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree"],
+    "description": "Given the root of a binary tree, return its maximum depth. A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.",
+    "examples": [
+      {"input": "root = [3,9,20,null,null,15,7]", "output": "3"},
+      {"input": "root = [1,null,2]", "output": "2"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [0, 10^4]."],
+    "test_cases": [],
+    "function_name": "maxDepth",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction maxDepth(root: TreeNode | null): number {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc maxDepth(root *TreeNode) int {\n    return 0\n}",
+    "cs_template": "    public int MaxDepth(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 105,
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "difficulty": "Medium",
+    "tags": ["Array", "Hash Table", "Divide and Conquer", "Tree"],
+    "description": "Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.",
+    "examples": [
+      {"input": "preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]", "output": "[3,9,20,null,null,15,7]"},
+      {"input": "preorder = [-1], inorder = [-1]", "output": "[-1]"}
+    ],
+    "constraints": ["1 <= preorder.length <= 3000"],
+    "test_cases": [],
+    "function_name": "buildTree",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction buildTree(preorder: number[], inorder: number[]): TreeNode | null {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc buildTree(preorder []int, inorder []int) *TreeNode {\n    return nil\n}",
+    "cs_template": "    public TreeNode BuildTree(int[] preorder, int[] inorder) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 106,
+    "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+    "difficulty": "Medium",
+    "tags": ["Array", "Hash Table", "Divide and Conquer", "Tree"],
+    "description": "Given two integer arrays inorder and postorder, construct and return the binary tree.",
+    "examples": [
+      {"input": "inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]", "output": "[3,9,20,null,null,15,7]"}
+    ],
+    "constraints": ["1 <= inorder.length <= 3000"],
+    "test_cases": [],
+    "function_name": "buildTree",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction buildTree(inorder: number[], postorder: number[]): TreeNode | null {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc buildTree(inorder []int, postorder []int) *TreeNode {\n    return nil\n}",
+    "cs_template": "    public TreeNode BuildTree(int[] inorder, int[] postorder) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 108,
+    "title": "Convert Sorted Array to Binary Search Tree",
+    "difficulty": "Easy",
+    "tags": ["Array", "Divide and Conquer", "Tree", "Binary Search Tree"],
+    "description": "Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.",
+    "examples": [
+      {"input": "nums = [-10,-3,0,5,9]", "output": "[0,-3,9,-10,null,5]"},
+      {"input": "nums = [1,3]", "output": "[3,1]"}
+    ],
+    "constraints": ["1 <= nums.length <= 10^4"],
+    "test_cases": [],
+    "function_name": "sortedArrayToBST",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction sortedArrayToBST(nums: number[]): TreeNode | null {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc sortedArrayToBST(nums []int) *TreeNode {\n    return nil\n}",
+    "cs_template": "    public TreeNode SortedArrayToBST(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 112,
+    "title": "Path Sum",
+    "difficulty": "Easy",
+    "tags": ["Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree"],
+    "description": "Given the root of a binary tree and an integer targetSum, return true if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum.",
+    "examples": [
+      {"input": "root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22", "output": "true"},
+      {"input": "root = [1,2,3], targetSum = 5", "output": "false"}
+    ],
+    "constraints": ["0 <= number of nodes <= 5000", "-1000 <= Node.val <= 1000"],
+    "test_cases": [],
+    "function_name": "hasPathSum",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction hasPathSum(root: TreeNode | null, targetSum: number): boolean {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc hasPathSum(root *TreeNode, targetSum int) bool {\n    return false\n}",
+    "cs_template": "    public bool HasPathSum(TreeNode root, int targetSum) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 114,
+    "title": "Flatten Binary Tree to Linked List",
+    "difficulty": "Medium",
+    "tags": ["Linked List", "Stack", "Tree", "Depth-First Search"],
+    "description": "Given the root of a binary tree, flatten the tree into a 'linked list' in-place using right pointers in preorder.",
+    "examples": [
+      {"input": "root = [1,2,5,3,4,null,6]", "output": "[1,null,2,null,3,null,4,null,5,null,6]"}
+    ],
+    "constraints": ["0 <= number of nodes <= 2000"],
+    "test_cases": [],
+    "function_name": "flatten",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction flatten(root: TreeNode | null): void {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc flatten(root *TreeNode) {\n    \n}",
+    "cs_template": "    public void Flatten(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 117,
+    "title": "Populating Next Right Pointers in Each Node II",
+    "difficulty": "Medium",
+    "tags": ["Linked List", "Tree", "Depth-First Search", "Breadth-First Search"],
+    "description": "Given a binary tree where each node has an additional next pointer, populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.",
+    "examples": [
+      {"input": "root = [1,2,3,4,5,null,7]", "output": "[1,#,2,3,#,4,5,7,#]"}
+    ],
+    "constraints": ["0 <= number of nodes <= 6000"],
+    "test_cases": [],
+    "function_name": "connect",
+    "ts_template": "class Node {\n    val: number; left: Node | null; right: Node | null; next: Node | null;\n    constructor(val = 0, left: Node | null = null, right: Node | null = null, next: Node | null = null) {\n        this.val = val; this.left = left; this.right = right; this.next = next;\n    }\n}\n\nfunction connect(root: Node | null): Node | null {\n    \n}",
+    "go_template": "type Node struct {\n    Val   int\n    Left  *Node\n    Right *Node\n    Next  *Node\n}\n\nfunc connect(root *Node) *Node {\n    return nil\n}",
+    "cs_template": "    public Node Connect(Node root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 120,
+    "title": "Triangle",
+    "difficulty": "Medium",
+    "tags": ["Array", "Dynamic Programming"],
+    "description": "Given a triangle array, return the minimum path sum from top to bottom. For each step you may move to an adjacent number of the row below.",
+    "examples": [
+      {"input": "triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]", "output": "11", "explanation": "2 + 3 + 5 + 1 = 11"},
+      {"input": "triangle = [[-10]]", "output": "-10"}
+    ],
+    "constraints": ["1 <= triangle.length <= 200"],
+    "test_cases": [
+      {"input": [[[2],[3,4],[6,5,7],[4,1,8,3]]], "expected": 11},
+      {"input": [[[-10]]], "expected": -10}
+    ],
+    "function_name": "minimumTotal",
+    "ts_template": "function minimumTotal(triangle: number[][]): number {\n    \n}",
+    "go_template": "func minimumTotal(triangle [][]int) int {\n    return 0\n}",
+    "cs_template": "    public int MinimumTotal(IList<IList<int>> triangle) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 121,
+    "title": "Best Time to Buy and Sell Stock",
+    "difficulty": "Easy",
+    "tags": ["Array", "Dynamic Programming"],
+    "description": "You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock. Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.",
+    "examples": [
+      {"input": "prices = [7,1,5,3,6,4]", "output": "5", "explanation": "Buy on day 2 (price=1), sell on day 5 (price=6), profit = 6-1 = 5."},
+      {"input": "prices = [7,6,4,3,1]", "output": "0", "explanation": "No profit possible."}
+    ],
+    "constraints": ["1 <= prices.length <= 10^5", "0 <= prices[i] <= 10^4"],
+    "test_cases": [
+      {"input": [[7,1,5,3,6,4]], "expected": 5},
+      {"input": [[7,6,4,3,1]], "expected": 0},
+      {"input": [[2,4,1]], "expected": 2}
+    ],
+    "function_name": "maxProfit",
+    "ts_template": "function maxProfit(prices: number[]): number {\n    \n}",
+    "go_template": "func maxProfit(prices []int) int {\n    return 0\n}",
+    "cs_template": "    public int MaxProfit(int[] prices) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 122,
+    "title": "Best Time to Buy and Sell Stock II",
+    "difficulty": "Medium",
+    "tags": ["Array", "Dynamic Programming", "Greedy"],
+    "description": "You are given an integer array prices. On each day, you may decide to buy and/or sell the stock. You can only hold at most one share at a time. Find and return the maximum profit you can achieve.",
+    "examples": [
+      {"input": "prices = [7,1,5,3,6,4]", "output": "7"},
+      {"input": "prices = [1,2,3,4,5]", "output": "4"},
+      {"input": "prices = [7,6,4,3,1]", "output": "0"}
+    ],
+    "constraints": ["1 <= prices.length <= 3 * 10^4"],
+    "test_cases": [
+      {"input": [[7,1,5,3,6,4]], "expected": 7},
+      {"input": [[1,2,3,4,5]], "expected": 4},
+      {"input": [[7,6,4,3,1]], "expected": 0}
+    ],
+    "function_name": "maxProfit",
+    "ts_template": "function maxProfit(prices: number[]): number {\n    \n}",
+    "go_template": "func maxProfit(prices []int) int {\n    return 0\n}",
+    "cs_template": "    public int MaxProfit(int[] prices) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 123,
+    "title": "Best Time to Buy and Sell Stock III",
+    "difficulty": "Hard",
+    "tags": ["Array", "Dynamic Programming"],
+    "description": "You are given an array prices. You may complete at most two transactions. Find the maximum profit. You may not engage in multiple transactions simultaneously.",
+    "examples": [
+      {"input": "prices = [3,3,5,0,0,3,1,4]", "output": "6"},
+      {"input": "prices = [1,2,3,4,5]", "output": "4"},
+      {"input": "prices = [7,6,4,3,1]", "output": "0"}
+    ],
+    "constraints": ["1 <= prices.length <= 10^5"],
+    "test_cases": [
+      {"input": [[3,3,5,0,0,3,1,4]], "expected": 6},
+      {"input": [[1,2,3,4,5]], "expected": 4},
+      {"input": [[7,6,4,3,1]], "expected": 0}
+    ],
+    "function_name": "maxProfit",
+    "ts_template": "function maxProfit(prices: number[]): number {\n    \n}",
+    "go_template": "func maxProfit(prices []int) int {\n    return 0\n}",
+    "cs_template": "    public int MaxProfit(int[] prices) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 124,
+    "title": "Binary Tree Maximum Path Sum",
+    "difficulty": "Hard",
+    "tags": ["Dynamic Programming", "Tree", "Depth-First Search", "Binary Tree"],
+    "description": "A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge. Return the maximum path sum of any non-empty path.",
+    "examples": [
+      {"input": "root = [1,2,3]", "output": "6"},
+      {"input": "root = [-10,9,20,null,null,15,7]", "output": "42"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [1, 3 * 10^4]."],
+    "test_cases": [],
+    "function_name": "maxPathSum",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction maxPathSum(root: TreeNode | null): number {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc maxPathSum(root *TreeNode) int {\n    return 0\n}",
+    "cs_template": "    public int MaxPathSum(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 125,
+    "title": "Valid Palindrome",
+    "difficulty": "Easy",
+    "tags": ["Two Pointers", "String"],
+    "description": "A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Given a string s, return true if it is a palindrome, or false otherwise.",
+    "examples": [
+      {"input": "s = \"A man, a plan, a canal: Panama\"", "output": "true"},
+      {"input": "s = \"race a car\"", "output": "false"},
+      {"input": "s = \" \"", "output": "true"}
+    ],
+    "constraints": ["1 <= s.length <= 2 * 10^5"],
+    "test_cases": [
+      {"input": ["A man, a plan, a canal: Panama"], "expected": true},
+      {"input": ["race a car"], "expected": false},
+      {"input": [" "], "expected": true}
+    ],
+    "function_name": "isPalindrome",
+    "ts_template": "function isPalindrome(s: string): boolean {\n    \n}",
+    "go_template": "func isPalindrome(s string) bool {\n    return false\n}",
+    "cs_template": "    public bool IsPalindrome(string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 127,
+    "title": "Word Ladder",
+    "difficulty": "Hard",
+    "tags": ["Hash Table", "String", "Breadth-First Search"],
+    "description": "A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence where each adjacent pair of words differs by a single letter, and each intermediate word must exist in wordList. Given beginWord, endWord, and wordList, return the number of words in the shortest transformation sequence, or 0 if no such sequence exists.",
+    "examples": [
+      {"input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]", "output": "5"},
+      {"input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]", "output": "0"}
+    ],
+    "constraints": ["1 <= beginWord.length <= 10", "endWord.length == beginWord.length"],
+    "test_cases": [
+      {"input": ["hit", "cog", ["hot","dot","dog","lot","log","cog"]], "expected": 5},
+      {"input": ["hit", "cog", ["hot","dot","dog","lot","log"]], "expected": 0}
+    ],
+    "function_name": "ladderLength",
+    "ts_template": "function ladderLength(beginWord: string, endWord: string, wordList: string[]): number {\n    \n}",
+    "go_template": "func ladderLength(beginWord string, endWord string, wordList []string) int {\n    return 0\n}",
+    "cs_template": "    public int LadderLength(string beginWord, string endWord, IList<string> wordList) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 128,
+    "title": "Longest Consecutive Sequence",
+    "difficulty": "Medium",
+    "tags": ["Array", "Hash Table", "Union Find"],
+    "description": "Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. Must run in O(n) time.",
+    "examples": [
+      {"input": "nums = [100,4,200,1,3,2]", "output": "4", "explanation": "Consecutive sequence: [1,2,3,4]"},
+      {"input": "nums = [0,3,7,2,5,8,4,6,0,1]", "output": "9"}
+    ],
+    "constraints": ["0 <= nums.length <= 10^5", "-10^9 <= nums[i] <= 10^9"],
+    "test_cases": [
+      {"input": [[100,4,200,1,3,2]], "expected": 4},
+      {"input": [[0,3,7,2,5,8,4,6,0,1]], "expected": 9},
+      {"input": [[]], "expected": 0}
+    ],
+    "function_name": "longestConsecutive",
+    "ts_template": "function longestConsecutive(nums: number[]): number {\n    \n}",
+    "go_template": "func longestConsecutive(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int LongestConsecutive(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 129,
+    "title": "Sum Root to Leaf Numbers",
+    "difficulty": "Medium",
+    "tags": ["Tree", "Depth-First Search", "Binary Tree"],
+    "description": "You are given the root of a binary tree containing digits from 0 to 9 only. Each root-to-leaf path represents a number. Return the total sum of all root-to-leaf numbers.",
+    "examples": [
+      {"input": "root = [1,2,3]", "output": "25", "explanation": "12 + 13 = 25"},
+      {"input": "root = [4,9,0,5,1]", "output": "1026"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [1, 1000]."],
+    "test_cases": [],
+    "function_name": "sumNumbers",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction sumNumbers(root: TreeNode | null): number {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc sumNumbers(root *TreeNode) int {\n    return 0\n}",
+    "cs_template": "    public int SumNumbers(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 130,
+    "title": "Surrounded Regions",
+    "difficulty": "Medium",
+    "tags": ["Array", "Depth-First Search", "Breadth-First Search", "Union Find", "Matrix"],
+    "description": "Given an m x n matrix board containing 'X' and 'O', capture all regions that are 4-directionally surrounded by 'X'. A region is captured by flipping all 'O's into 'X's in that surrounded region.",
+    "examples": [
+      {"input": "board = [[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]", "output": "[[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]"}
+    ],
+    "constraints": ["m == board.length", "n == board[i].length", "1 <= m, n <= 200"],
+    "test_cases": [],
+    "function_name": "solve",
+    "ts_template": "function solve(board: string[][]): void {\n    \n}",
+    "go_template": "func solve(board [][]byte) {\n    \n}",
+    "cs_template": "    public void Solve(char[][] board) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 131,
+    "title": "Palindrome Partitioning",
+    "difficulty": "Medium",
+    "tags": ["String", "Dynamic Programming", "Backtracking"],
+    "description": "Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of s.",
+    "examples": [
+      {"input": "s = \"aab\"", "output": "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]"},
+      {"input": "s = \"a\"", "output": "[[\"a\"]]"}
+    ],
+    "constraints": ["1 <= s.length <= 16"],
+    "test_cases": [
+      {"input": ["a"], "expected": [["a"]]},
+      {"input": ["aab"], "expected": [["a","a","b"],["aa","b"]]}
+    ],
+    "function_name": "partition",
+    "ts_template": "function partition(s: string): string[][] {\n    \n}",
+    "go_template": "func partition(s string) [][]string {\n    return nil\n}",
+    "cs_template": "    public IList<IList<string>> Partition(string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 133,
+    "title": "Clone Graph",
+    "difficulty": "Medium",
+    "tags": ["Hash Table", "Depth-First Search", "Breadth-First Search", "Graph"],
+    "description": "Given a reference of a node in a connected undirected graph, return a deep copy (clone) of the graph. Each node contains a value and a list of its neighbors.",
+    "examples": [
+      {"input": "adjList = [[2,4],[1,3],[2,4],[1,3]]", "output": "[[2,4],[1,3],[2,4],[1,3]]"}
+    ],
+    "constraints": ["The number of nodes in the graph is in the range [0, 100]."],
+    "test_cases": [],
+    "function_name": "cloneGraph",
+    "ts_template": "class _Node {\n    val: number;\n    neighbors: _Node[];\n    constructor(val = 0, neighbors: _Node[] = []) { this.val = val; this.neighbors = neighbors; }\n}\n\nfunction cloneGraph(node: _Node | null): _Node | null {\n    \n}",
+    "go_template": "type Node struct {\n    Val       int\n    Neighbors []*Node\n}\n\nfunc cloneGraph(node *Node) *Node {\n    return nil\n}",
+    "cs_template": "    public Node CloneGraph(Node node) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 134,
+    "title": "Gas Station",
+    "difficulty": "Medium",
+    "tags": ["Array", "Greedy"],
+    "description": "There are n gas stations along a circular route. You are given two integer arrays gas and cost. Return the starting gas station's index if you can travel around the circuit once, otherwise return -1.",
+    "examples": [
+      {"input": "gas = [1,2,3,4,5], cost = [3,4,5,1,2]", "output": "3"},
+      {"input": "gas = [2,3,4], cost = [3,4,3]", "output": "-1"}
+    ],
+    "constraints": ["n == gas.length == cost.length", "1 <= n <= 10^5"],
+    "test_cases": [
+      {"input": [[1,2,3,4,5], [3,4,5,1,2]], "expected": 3},
+      {"input": [[2,3,4], [3,4,3]], "expected": -1}
+    ],
+    "function_name": "canCompleteCircuit",
+    "ts_template": "function canCompleteCircuit(gas: number[], cost: number[]): number {\n    \n}",
+    "go_template": "func canCompleteCircuit(gas []int, cost []int) int {\n    return -1\n}",
+    "cs_template": "    public int CanCompleteCircuit(int[] gas, int[] cost) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 135,
+    "title": "Candy",
+    "difficulty": "Hard",
+    "tags": ["Array", "Greedy"],
+    "description": "There are n children standing in a line. Each child is assigned a rating value. You are giving candies to these children: each child must have at least one candy, and children with a higher rating get more candies than their neighbors. Return the minimum number of candies.",
+    "examples": [
+      {"input": "ratings = [1,0,2]", "output": "5"},
+      {"input": "ratings = [1,2,2]", "output": "4"}
+    ],
+    "constraints": ["n == ratings.length", "1 <= n <= 2 * 10^4"],
+    "test_cases": [
+      {"input": [[1,0,2]], "expected": 5},
+      {"input": [[1,2,2]], "expected": 4}
+    ],
+    "function_name": "candy",
+    "ts_template": "function candy(ratings: number[]): number {\n    \n}",
+    "go_template": "func candy(ratings []int) int {\n    return 0\n}",
+    "cs_template": "    public int Candy(int[] ratings) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 136,
+    "title": "Single Number",
+    "difficulty": "Easy",
+    "tags": ["Array", "Bit Manipulation"],
+    "description": "Given a non-empty array of integers nums, every element appears twice except for one. Find that single one. Must use linear runtime complexity and constant extra space.",
+    "examples": [
+      {"input": "nums = [2,2,1]", "output": "1"},
+      {"input": "nums = [4,1,2,1,2]", "output": "4"},
+      {"input": "nums = [1]", "output": "1"}
+    ],
+    "constraints": ["1 <= nums.length <= 3 * 10^4", "-3 * 10^4 <= nums[i] <= 3 * 10^4"],
+    "test_cases": [
+      {"input": [[2,2,1]], "expected": 1},
+      {"input": [[4,1,2,1,2]], "expected": 4},
+      {"input": [[1]], "expected": 1}
+    ],
+    "function_name": "singleNumber",
+    "ts_template": "function singleNumber(nums: number[]): number {\n    \n}",
+    "go_template": "func singleNumber(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int SingleNumber(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 137,
+    "title": "Single Number II",
+    "difficulty": "Medium",
+    "tags": ["Array", "Bit Manipulation"],
+    "description": "Given an integer array nums where every element appears exactly three times except for one, which appears exactly once. Find the single element and return it. Must use linear runtime and constant extra space.",
+    "examples": [
+      {"input": "nums = [2,2,3,2]", "output": "3"},
+      {"input": "nums = [0,1,0,1,0,1,99]", "output": "99"}
+    ],
+    "constraints": ["1 <= nums.length <= 3 * 10^4"],
+    "test_cases": [
+      {"input": [[2,2,3,2]], "expected": 3},
+      {"input": [[0,1,0,1,0,1,99]], "expected": 99}
+    ],
+    "function_name": "singleNumber",
+    "ts_template": "function singleNumber(nums: number[]): number {\n    \n}",
+    "go_template": "func singleNumber(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int SingleNumber(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 138,
+    "title": "Copy List with Random Pointer",
+    "difficulty": "Medium",
+    "tags": ["Hash Table", "Linked List"],
+    "description": "A linked list of length n is given such that each node contains an additional random pointer pointing to any node in the list, or null. Construct a deep copy of the list.",
+    "examples": [
+      {"input": "head = [[7,null],[13,0],[11,4],[10,2],[1,0]]", "output": "[[7,null],[13,0],[11,4],[10,2],[1,0]]"}
+    ],
+    "constraints": ["0 <= n <= 1000"],
+    "test_cases": [],
+    "function_name": "copyRandomList",
+    "ts_template": "class _Node {\n    val: number;\n    next: _Node | null;\n    random: _Node | null;\n    constructor(val = 0, next: _Node | null = null, random: _Node | null = null) {\n        this.val = val; this.next = next; this.random = random;\n    }\n}\n\nfunction copyRandomList(head: _Node | null): _Node | null {\n    \n}",
+    "go_template": "type Node struct {\n    Val    int\n    Next   *Node\n    Random *Node\n}\n\nfunc copyRandomList(head *Node) *Node {\n    return nil\n}",
+    "cs_template": "    public Node CopyRandomList(Node head) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 139,
+    "title": "Word Break",
+    "difficulty": "Medium",
+    "tags": ["Array", "Hash Table", "String", "Dynamic Programming", "Trie", "Memoization"],
+    "description": "Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.",
+    "examples": [
+      {"input": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]", "output": "true"},
+      {"input": "s = \"applepenapple\", wordDict = [\"apple\",\"pen\"]", "output": "true"},
+      {"input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]", "output": "false"}
+    ],
+    "constraints": ["1 <= s.length <= 300"],
+    "test_cases": [
+      {"input": ["leetcode", ["leet","code"]], "expected": true},
+      {"input": ["applepenapple", ["apple","pen"]], "expected": true},
+      {"input": ["catsandog", ["cats","dog","sand","and","cat"]], "expected": false}
+    ],
+    "function_name": "wordBreak",
+    "ts_template": "function wordBreak(s: string, wordDict: string[]): boolean {\n    \n}",
+    "go_template": "func wordBreak(s string, wordDict []string) bool {\n    return false\n}",
+    "cs_template": "    public bool WordBreak(string s, IList<string> wordDict) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 141,
+    "title": "Linked List Cycle",
+    "difficulty": "Easy",
+    "tags": ["Hash Table", "Linked List", "Two Pointers"],
+    "description": "Given head, the head of a linked list, determine if the linked list has a cycle in it. Return true if there is a cycle, and false otherwise.",
+    "examples": [
+      {"input": "head = [3,2,0,-4], pos = 1", "output": "true"},
+      {"input": "head = [1,2], pos = 0", "output": "true"},
+      {"input": "head = [1], pos = -1", "output": "false"}
+    ],
+    "constraints": ["The number of the nodes in the list is in the range [0, 10^4]."],
+    "test_cases": [],
+    "function_name": "hasCycle",
+    "ts_template": "class ListNode {\n    val: number; next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction hasCycle(head: ListNode | null): boolean {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc hasCycle(head *ListNode) bool {\n    return false\n}",
+    "cs_template": "    public bool HasCycle(ListNode head) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 146,
+    "title": "LRU Cache",
+    "difficulty": "Medium",
+    "tags": ["Hash Table", "Linked List", "Design", "Doubly-Linked List"],
+    "description": "Design a data structure that follows the constraints of a Least Recently Used (LRU) cache. Implement LRUCache class with get(key) and put(key, value) methods. Both operations must run in O(1) time.",
+    "examples": [
+      {"input": "[\"LRUCache\",\"put\",\"put\",\"get\",\"put\",\"get\",\"put\",\"get\",\"get\",\"get\"]\n[[2],[1,1],[2,2],[1],[3,3],[2],[4,4],[1],[3],[4]]", "output": "[null,null,null,1,null,-1,null,-1,3,4]"}
+    ],
+    "constraints": ["1 <= capacity <= 3000", "0 <= key <= 10^4", "0 <= value <= 10^5"],
+    "test_cases": [],
+    "function_name": "LRUCache",
+    "ts_template": "class LRUCache {\n    constructor(capacity: number) {\n        \n    }\n\n    get(key: number): number {\n        \n    }\n\n    put(key: number, value: number): void {\n        \n    }\n}",
+    "go_template": "type LRUCache struct {\n    // TODO\n}\n\nfunc Constructor(capacity int) LRUCache {\n    return LRUCache{}\n}\n\nfunc (this *LRUCache) Get(key int) int {\n    return -1\n}\n\nfunc (this *LRUCache) Put(key int, value int) {\n    \n}",
+    "cs_template": "    public LRUCache(int capacity) {\n        \n    }\n    \n    public int Get(int key) {\n        return -1;\n    }\n    \n    public void Put(int key, int value) {\n        \n    }"
+  },
+  {
+    "id": 148,
+    "title": "Sort List",
+    "difficulty": "Medium",
+    "tags": ["Linked List", "Two Pointers", "Divide and Conquer", "Sorting", "Merge Sort"],
+    "description": "Given the head of a linked list, return the list after sorting it in ascending order. Must run in O(n log n) time and O(1) memory.",
+    "examples": [
+      {"input": "head = [4,2,1,3]", "output": "[1,2,3,4]"},
+      {"input": "head = [-1,5,3,4,0]", "output": "[-1,0,3,4,5]"}
+    ],
+    "constraints": ["0 <= number of nodes <= 5 * 10^4"],
+    "test_cases": [],
+    "function_name": "sortList",
+    "ts_template": "class ListNode {\n    val: number; next: ListNode | null;\n    constructor(val = 0, next: ListNode | null = null) { this.val = val; this.next = next; }\n}\n\nfunction sortList(head: ListNode | null): ListNode | null {\n    \n}",
+    "go_template": "type ListNode struct {\n    Val  int\n    Next *ListNode\n}\n\nfunc sortList(head *ListNode) *ListNode {\n    return nil\n}",
+    "cs_template": "    public ListNode SortList(ListNode head) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 149,
+    "title": "Max Points on a Line",
+    "difficulty": "Hard",
+    "tags": ["Array", "Hash Table", "Math", "Geometry"],
+    "description": "Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane, return the maximum number of points that lie on the same straight line.",
+    "examples": [
+      {"input": "points = [[1,1],[2,2],[3,3]]", "output": "3"},
+      {"input": "points = [[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]", "output": "4"}
+    ],
+    "constraints": ["1 <= points.length <= 300"],
+    "test_cases": [
+      {"input": [[[1,1],[2,2],[3,3]]], "expected": 3},
+      {"input": [[[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]], "expected": 4}
+    ],
+    "function_name": "maxPoints",
+    "ts_template": "function maxPoints(points: number[][]): number {\n    \n}",
+    "go_template": "func maxPoints(points [][]int) int {\n    return 0\n}",
+    "cs_template": "    public int MaxPoints(int[][] points) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 150,
+    "title": "Evaluate Reverse Polish Notation",
+    "difficulty": "Medium",
+    "tags": ["Array", "Math", "Stack"],
+    "description": "You are given an array of strings tokens that represents an arithmetic expression in Reverse Polish Notation. Evaluate the expression and return an integer representing the value.",
+    "examples": [
+      {"input": "tokens = [\"2\",\"1\",\"+\",\"3\",\"*\"]", "output": "9"},
+      {"input": "tokens = [\"4\",\"13\",\"5\",\"/\",\"+\"]", "output": "6"},
+      {"input": "tokens = [\"10\",\"6\",\"9\",\"3\",\"+\",\"-11\",\"*\",\"/\",\"*\",\"17\",\"+\",\"5\",\"+\"]", "output": "22"}
+    ],
+    "constraints": ["1 <= tokens.length <= 10^4"],
+    "test_cases": [
+      {"input": [["2","1","+","3","*"]], "expected": 9},
+      {"input": [["4","13","5","/","+"]], "expected": 6}
+    ],
+    "function_name": "evalRPN",
+    "ts_template": "function evalRPN(tokens: string[]): number {\n    \n}",
+    "go_template": "func evalRPN(tokens []string) int {\n    return 0\n}",
+    "cs_template": "    public int EvalRPN(string[] tokens) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 151,
+    "title": "Reverse Words in a String",
+    "difficulty": "Medium",
+    "tags": ["Two Pointers", "String"],
+    "description": "Given an input string s, reverse the order of the words. A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.",
+    "examples": [
+      {"input": "s = \"the sky is blue\"", "output": "\"blue is sky the\""},
+      {"input": "s = \"  hello world  \"", "output": "\"world hello\""},
+      {"input": "s = \"a good   example\"", "output": "\"example good a\""}
+    ],
+    "constraints": ["1 <= s.length <= 10^4"],
+    "test_cases": [
+      {"input": ["the sky is blue"], "expected": "blue is sky the"},
+      {"input": ["  hello world  "], "expected": "world hello"},
+      {"input": ["a good   example"], "expected": "example good a"}
+    ],
+    "function_name": "reverseWords",
+    "ts_template": "function reverseWords(s: string): string {\n    \n}",
+    "go_template": "func reverseWords(s string) string {\n    return \"\"\n}",
+    "cs_template": "    public string ReverseWords(string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 153,
+    "title": "Find Minimum in Rotated Sorted Array",
+    "difficulty": "Medium",
+    "tags": ["Array", "Binary Search"],
+    "description": "Suppose an array of length n sorted in ascending order is rotated between 1 and n times. Given the sorted rotated array nums of unique elements, return the minimum element of this array. Must run in O(log n).",
+    "examples": [
+      {"input": "nums = [3,4,5,1,2]", "output": "1"},
+      {"input": "nums = [4,5,6,7,0,1,2]", "output": "0"},
+      {"input": "nums = [11,13,15,17]", "output": "11"}
+    ],
+    "constraints": ["n == nums.length", "1 <= n <= 5000", "All values are unique."],
+    "test_cases": [
+      {"input": [[3,4,5,1,2]], "expected": 1},
+      {"input": [[4,5,6,7,0,1,2]], "expected": 0},
+      {"input": [[11,13,15,17]], "expected": 11}
+    ],
+    "function_name": "findMin",
+    "ts_template": "function findMin(nums: number[]): number {\n    \n}",
+    "go_template": "func findMin(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int FindMin(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 155,
+    "title": "Min Stack",
+    "difficulty": "Medium",
+    "tags": ["Stack", "Design"],
+    "description": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.",
+    "examples": [
+      {"input": "[\"MinStack\",\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]\n[[],[-2],[0],[-3],[],[],[],[]]", "output": "[null,null,null,null,-3,null,0,-2]"}
+    ],
+    "constraints": ["-2^31 <= val <= 2^31 - 1"],
+    "test_cases": [],
+    "function_name": "MinStack",
+    "ts_template": "class MinStack {\n    constructor() {\n        \n    }\n\n    push(val: number): void {\n        \n    }\n\n    pop(): void {\n        \n    }\n\n    top(): number {\n        \n    }\n\n    getMin(): number {\n        \n    }\n}",
+    "go_template": "type MinStack struct {\n    // TODO\n}\n\nfunc Constructor() MinStack {\n    return MinStack{}\n}\n\nfunc (this *MinStack) Push(val int) {\n}\n\nfunc (this *MinStack) Pop() {\n}\n\nfunc (this *MinStack) Top() int {\n    return 0\n}\n\nfunc (this *MinStack) GetMin() int {\n    return 0\n}",
+    "cs_template": "    public MinStack() { }\n    public void Push(int val) { }\n    public void Pop() { }\n    public int Top() { return 0; }\n    public int GetMin() { return 0; }"
+  },
+  {
+    "id": 162,
+    "title": "Find Peak Element",
+    "difficulty": "Medium",
+    "tags": ["Array", "Binary Search"],
+    "description": "A peak element is an element that is strictly greater than its neighbors. Given a 0-indexed integer array nums, find a peak element, and return its index. Must run in O(log n).",
+    "examples": [
+      {"input": "nums = [1,2,3,1]", "output": "2"},
+      {"input": "nums = [1,2,1,3,5,6,4]", "output": "5"}
+    ],
+    "constraints": ["1 <= nums.length <= 1000"],
+    "test_cases": [
+      {"input": [[1,2,3,1]], "expected": 2},
+      {"input": [[1]], "expected": 0}
+    ],
+    "function_name": "findPeakElement",
+    "ts_template": "function findPeakElement(nums: number[]): number {\n    \n}",
+    "go_template": "func findPeakElement(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int FindPeakElement(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 167,
+    "title": "Two Sum II - Input Array Is Sorted",
+    "difficulty": "Medium",
+    "tags": ["Array", "Two Pointers", "Binary Search"],
+    "description": "Given a 1-indexed array of integers numbers that is already sorted in non-decreasing order, find two numbers such that they add up to a specific target number. Use only O(1) extra space.",
+    "examples": [
+      {"input": "numbers = [2,7,11,15], target = 9", "output": "[1,2]"},
+      {"input": "numbers = [2,3,4], target = 6", "output": "[1,3]"},
+      {"input": "numbers = [-1,0], target = -1", "output": "[1,2]"}
+    ],
+    "constraints": ["2 <= numbers.length <= 3 * 10^4"],
+    "test_cases": [
+      {"input": [[2,7,11,15], 9], "expected": [1,2]},
+      {"input": [[2,3,4], 6], "expected": [1,3]},
+      {"input": [[-1,0], -1], "expected": [1,2]}
+    ],
+    "function_name": "twoSum",
+    "ts_template": "function twoSum(numbers: number[], target: number): number[] {\n    \n}",
+    "go_template": "func twoSum(numbers []int, target int) []int {\n    return nil\n}",
+    "cs_template": "    public int[] TwoSum(int[] numbers, int target) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 169,
+    "title": "Majority Element",
+    "difficulty": "Easy",
+    "tags": ["Array", "Hash Table", "Divide and Conquer", "Sorting", "Counting"],
+    "description": "Given an array nums of size n, return the majority element. The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.",
+    "examples": [
+      {"input": "nums = [3,2,3]", "output": "3"},
+      {"input": "nums = [2,2,1,1,1,2,2]", "output": "2"}
+    ],
+    "constraints": ["n == nums.length", "1 <= n <= 5 * 10^4", "The majority element always exists."],
+    "test_cases": [
+      {"input": [[3,2,3]], "expected": 3},
+      {"input": [[2,2,1,1,1,2,2]], "expected": 2},
+      {"input": [[1]], "expected": 1}
+    ],
+    "function_name": "majorityElement",
+    "ts_template": "function majorityElement(nums: number[]): number {\n    \n}",
+    "go_template": "func majorityElement(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int MajorityElement(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 172,
+    "title": "Factorial Trailing Zeroes",
+    "difficulty": "Medium",
+    "tags": ["Math"],
+    "description": "Given an integer n, return the number of trailing zeroes in n!. Must use O(log n) time.",
+    "examples": [
+      {"input": "n = 3", "output": "0"},
+      {"input": "n = 5", "output": "1"},
+      {"input": "n = 0", "output": "0"}
+    ],
+    "constraints": ["0 <= n <= 10^4"],
+    "test_cases": [
+      {"input": [3], "expected": 0},
+      {"input": [5], "expected": 1},
+      {"input": [25], "expected": 6}
+    ],
+    "function_name": "trailingZeroes",
+    "ts_template": "function trailingZeroes(n: number): number {\n    \n}",
+    "go_template": "func trailingZeroes(n int) int {\n    return 0\n}",
+    "cs_template": "    public int TrailingZeroes(int n) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 173,
+    "title": "Binary Search Tree Iterator",
+    "difficulty": "Medium",
+    "tags": ["Stack", "Tree", "Design", "Binary Search Tree", "Iterator"],
+    "description": "Implement the BSTIterator class that iterates over the in-order traversal of a BST. next() returns the next smallest number. hasNext() returns whether the next call to next() will be valid.",
+    "examples": [
+      {"input": "[\"BSTIterator\",\"next\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\n[[[7,3,15,null,null,9,20]],[],[],[],[],[],[],[],[],[]]", "output": "[null,3,7,true,9,true,15,true,20,false]"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [1, 10^5]."],
+    "test_cases": [],
+    "function_name": "BSTIterator",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nclass BSTIterator {\n    constructor(root: TreeNode | null) {\n        \n    }\n\n    next(): number {\n        \n    }\n\n    hasNext(): boolean {\n        \n    }\n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\ntype BSTIterator struct {\n    // TODO\n}\n\nfunc Constructor(root *TreeNode) BSTIterator {\n    return BSTIterator{}\n}\n\nfunc (it *BSTIterator) Next() int { return 0 }\nfunc (it *BSTIterator) HasNext() bool { return false }",
+    "cs_template": "    private BSTIterator(TreeNode root) { }\n    public int Next() { return 0; }\n    public bool HasNext() { return false; }"
+  },
+  {
+    "id": 188,
+    "title": "Best Time to Buy and Sell Stock IV",
+    "difficulty": "Hard",
+    "tags": ["Array", "Dynamic Programming"],
+    "description": "You are given an integer array prices and an integer k. You may complete at most k transactions. Find the maximum profit. You may not engage in multiple transactions simultaneously.",
+    "examples": [
+      {"input": "k = 2, prices = [2,4,1]", "output": "2"},
+      {"input": "k = 2, prices = [3,2,6,5,0,3]", "output": "7"}
+    ],
+    "constraints": ["1 <= k <= 100", "1 <= prices.length <= 1000"],
+    "test_cases": [
+      {"input": [2, [2,4,1]], "expected": 2},
+      {"input": [2, [3,2,6,5,0,3]], "expected": 7}
+    ],
+    "function_name": "maxProfit",
+    "ts_template": "function maxProfit(k: number, prices: number[]): number {\n    \n}",
+    "go_template": "func maxProfit(k int, prices []int) int {\n    return 0\n}",
+    "cs_template": "    public int MaxProfit(int k, int[] prices) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 189,
+    "title": "Rotate Array",
+    "difficulty": "Medium",
+    "tags": ["Array", "Math", "Two Pointers"],
+    "description": "Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.",
+    "examples": [
+      {"input": "nums = [1,2,3,4,5,6,7], k = 3", "output": "[5,6,7,1,2,3,4]"},
+      {"input": "nums = [-1,-100,3,99], k = 2", "output": "[3,99,-1,-100]"}
+    ],
+    "constraints": ["1 <= nums.length <= 10^5", "0 <= k <= 10^5"],
+    "test_cases": [
+      {"input": [[1,2,3,4,5,6,7], 3], "expected": [5,6,7,1,2,3,4]},
+      {"input": [[-1,-100,3,99], 2], "expected": [3,99,-1,-100]}
+    ],
+    "function_name": "rotate",
+    "ts_template": "function rotate(nums: number[], k: number): void {\n    \n}",
+    "go_template": "func rotate(nums []int, k int) {\n    \n}",
+    "cs_template": "    public void Rotate(int[] nums, int k) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 191,
+    "title": "Number of 1 Bits",
+    "difficulty": "Easy",
+    "tags": ["Divide and Conquer", "Bit Manipulation"],
+    "description": "Write a function that takes the binary representation of a positive integer and returns the number of set bits it has (also known as the Hamming weight).",
+    "examples": [
+      {"input": "n = 11", "output": "3", "explanation": "11 = 1011 in binary, has 3 set bits"},
+      {"input": "n = 128", "output": "1"}
+    ],
+    "constraints": ["1 <= n <= 2^31 - 1"],
+    "test_cases": [
+      {"input": [11], "expected": 3},
+      {"input": [128], "expected": 1},
+      {"input": [2147483645], "expected": 30}
+    ],
+    "function_name": "hammingWeight",
+    "ts_template": "function hammingWeight(n: number): number {\n    \n}",
+    "go_template": "func hammingWeight(n int) int {\n    return 0\n}",
+    "cs_template": "    public int HammingWeight(int n) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 198,
+    "title": "House Robber",
+    "difficulty": "Medium",
+    "tags": ["Array", "Dynamic Programming"],
+    "description": "You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. Adjacent houses have security systems connected. Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.",
+    "examples": [
+      {"input": "nums = [1,2,3,1]", "output": "4", "explanation": "Rob house 1 (money = 1) and then rob house 3 (money = 3). Total = 4."},
+      {"input": "nums = [2,7,9,3,1]", "output": "12"}
+    ],
+    "constraints": ["1 <= nums.length <= 100", "0 <= nums[i] <= 400"],
+    "test_cases": [
+      {"input": [[1,2,3,1]], "expected": 4},
+      {"input": [[2,7,9,3,1]], "expected": 12},
+      {"input": [[1]], "expected": 1}
+    ],
+    "function_name": "rob",
+    "ts_template": "function rob(nums: number[]): number {\n    \n}",
+    "go_template": "func rob(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int Rob(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 199,
+    "title": "Binary Tree Right Side View",
+    "difficulty": "Medium",
+    "tags": ["Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree"],
+    "description": "Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.",
+    "examples": [
+      {"input": "root = [1,2,3,null,5,null,4]", "output": "[1,3,4]"},
+      {"input": "root = [1,null,3]", "output": "[1,3]"}
+    ],
+    "constraints": ["0 <= number of nodes <= 100"],
+    "test_cases": [],
+    "function_name": "rightSideView",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction rightSideView(root: TreeNode | null): number[] {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc rightSideView(root *TreeNode) []int {\n    return nil\n}",
+    "cs_template": "    public IList<int> RightSideView(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 200,
+    "title": "Number of Islands",
+    "difficulty": "Medium",
+    "tags": ["Array", "Depth-First Search", "Breadth-First Search", "Union Find", "Matrix"],
+    "description": "Given an m x n 2D binary grid which represents a map of '1's (land) and '0's (water), return the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.",
+    "examples": [
+      {"input": "grid = [[\"1\",\"1\",\"1\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"1\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"0\",\"0\"]]", "output": "1"},
+      {"input": "grid = [[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"1\",\"1\",\"0\",\"0\",\"0\"],[\"0\",\"0\",\"1\",\"0\",\"0\"],[\"0\",\"0\",\"0\",\"1\",\"1\"]]", "output": "3"}
+    ],
+    "constraints": ["m == grid.length", "n == grid[i].length", "1 <= m, n <= 300"],
+    "test_cases": [],
+    "function_name": "numIslands",
+    "ts_template": "function numIslands(grid: string[][]): number {\n    \n}",
+    "go_template": "func numIslands(grid [][]byte) int {\n    return 0\n}",
+    "cs_template": "    public int NumIslands(char[][] grid) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 201,
+    "title": "Bitwise AND of Numbers Range",
+    "difficulty": "Medium",
+    "tags": ["Bit Manipulation"],
+    "description": "Given two integers left and right that represent the range [left, right], return the bitwise AND of all numbers in this range, inclusive.",
+    "examples": [
+      {"input": "left = 5, right = 7", "output": "4"},
+      {"input": "left = 0, right = 0", "output": "0"},
+      {"input": "left = 1, right = 2147483647", "output": "0"}
+    ],
+    "constraints": ["0 <= left <= right <= 2^31 - 1"],
+    "test_cases": [
+      {"input": [5, 7], "expected": 4},
+      {"input": [0, 0], "expected": 0},
+      {"input": [1, 1], "expected": 1}
+    ],
+    "function_name": "rangeBitwiseAnd",
+    "ts_template": "function rangeBitwiseAnd(left: number, right: number): number {\n    \n}",
+    "go_template": "func rangeBitwiseAnd(left int, right int) int {\n    return 0\n}",
+    "cs_template": "    public int RangeBitwiseAnd(int left, int right) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 202,
+    "title": "Happy Number",
+    "difficulty": "Easy",
+    "tags": ["Hash Table", "Math", "Two Pointers"],
+    "description": "Write an algorithm to determine if a number n is happy. A happy number is defined by the following process: replace the number by the sum of the squares of its digits, and repeat until it equals 1 (happy) or loops endlessly (not happy).",
+    "examples": [
+      {"input": "n = 19", "output": "true", "explanation": "1^2 + 9^2 = 82, 8^2 + 2^2 = 68, ... → 1"},
+      {"input": "n = 2", "output": "false"}
+    ],
+    "constraints": ["1 <= n <= 2^31 - 1"],
+    "test_cases": [
+      {"input": [19], "expected": true},
+      {"input": [2], "expected": false},
+      {"input": [1], "expected": true}
+    ],
+    "function_name": "isHappy",
+    "ts_template": "function isHappy(n: number): boolean {\n    \n}",
+    "go_template": "func isHappy(n int) bool {\n    return false\n}",
+    "cs_template": "    public bool IsHappy(int n) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 205,
+    "title": "Isomorphic Strings",
+    "difficulty": "Easy",
+    "tags": ["Hash Table", "String"],
+    "description": "Given two strings s and t, determine if they are isomorphic. Two strings s and t are isomorphic if the characters in s can be replaced to get t. No two characters may map to the same character, but a character may map to itself.",
+    "examples": [
+      {"input": "s = \"egg\", t = \"add\"", "output": "true"},
+      {"input": "s = \"foo\", t = \"bar\"", "output": "false"},
+      {"input": "s = \"paper\", t = \"title\"", "output": "true"}
+    ],
+    "constraints": ["1 <= s.length <= 5 * 10^4", "t.length == s.length"],
+    "test_cases": [
+      {"input": ["egg", "add"], "expected": true},
+      {"input": ["foo", "bar"], "expected": false},
+      {"input": ["paper", "title"], "expected": true}
+    ],
+    "function_name": "isIsomorphic",
+    "ts_template": "function isIsomorphic(s: string, t: string): boolean {\n    \n}",
+    "go_template": "func isIsomorphic(s string, t string) bool {\n    return false\n}",
+    "cs_template": "    public bool IsIsomorphic(string s, string t) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 207,
+    "title": "Course Schedule",
+    "difficulty": "Medium",
+    "tags": ["Depth-First Search", "Breadth-First Search", "Graph", "Topological Sort"],
+    "description": "There are a total of numCourses courses you have to take. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai. Return true if you can finish all courses.",
+    "examples": [
+      {"input": "numCourses = 2, prerequisites = [[1,0]]", "output": "true"},
+      {"input": "numCourses = 2, prerequisites = [[1,0],[0,1]]", "output": "false"}
+    ],
+    "constraints": ["1 <= numCourses <= 2000", "0 <= prerequisites.length <= 5000"],
+    "test_cases": [
+      {"input": [2, [[1,0]]], "expected": true},
+      {"input": [2, [[1,0],[0,1]]], "expected": false}
+    ],
+    "function_name": "canFinish",
+    "ts_template": "function canFinish(numCourses: number, prerequisites: number[][]): boolean {\n    \n}",
+    "go_template": "func canFinish(numCourses int, prerequisites [][]int) bool {\n    return false\n}",
+    "cs_template": "    public bool CanFinish(int numCourses, int[][] prerequisites) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 208,
+    "title": "Implement Trie (Prefix Tree)",
+    "difficulty": "Medium",
+    "tags": ["Hash Table", "String", "Design", "Trie"],
+    "description": "A trie (prefix tree) is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. Implement the Trie class with insert, search, and startsWith methods.",
+    "examples": [
+      {"input": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]", "output": "[null,null,true,false,true,null,true]"}
+    ],
+    "constraints": ["1 <= word.length, prefix.length <= 2000"],
+    "test_cases": [],
+    "function_name": "Trie",
+    "ts_template": "class Trie {\n    constructor() {\n        \n    }\n\n    insert(word: string): void {\n        \n    }\n\n    search(word: string): boolean {\n        \n    }\n\n    startsWith(prefix: string): boolean {\n        \n    }\n}",
+    "go_template": "type Trie struct {\n    // TODO\n}\n\nfunc Constructor() Trie {\n    return Trie{}\n}\n\nfunc (t *Trie) Insert(word string) {}\nfunc (t *Trie) Search(word string) bool { return false }\nfunc (t *Trie) StartsWith(prefix string) bool { return false }",
+    "cs_template": "    public Trie() { }\n    public void Insert(string word) { }\n    public bool Search(string word) { return false; }\n    public bool StartsWith(string prefix) { return false; }"
+  },
+  {
+    "id": 209,
+    "title": "Minimum Size Subarray Sum",
+    "difficulty": "Medium",
+    "tags": ["Array", "Binary Search", "Sliding Window"],
+    "description": "Given an array of positive integers nums and a positive integer target, return the minimal length of a subarray whose sum is greater than or equal to target. If there is no such subarray, return 0 instead.",
+    "examples": [
+      {"input": "target = 7, nums = [2,3,1,2,4,3]", "output": "2"},
+      {"input": "target = 4, nums = [1,4,4]", "output": "1"},
+      {"input": "target = 11, nums = [1,1,1,1,1,1,1,1]", "output": "0"}
+    ],
+    "constraints": ["1 <= target <= 10^9", "1 <= nums.length <= 10^5"],
+    "test_cases": [
+      {"input": [7, [2,3,1,2,4,3]], "expected": 2},
+      {"input": [4, [1,4,4]], "expected": 1},
+      {"input": [11, [1,1,1,1,1,1,1,1]], "expected": 0}
+    ],
+    "function_name": "minSubArrayLen",
+    "ts_template": "function minSubArrayLen(target: number, nums: number[]): number {\n    \n}",
+    "go_template": "func minSubArrayLen(target int, nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int MinSubArrayLen(int target, int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 210,
+    "title": "Course Schedule II",
+    "difficulty": "Medium",
+    "tags": ["Depth-First Search", "Breadth-First Search", "Graph", "Topological Sort"],
+    "description": "Return the ordering of courses you should take to finish all courses. If it is impossible, return an empty array.",
+    "examples": [
+      {"input": "numCourses = 2, prerequisites = [[1,0]]", "output": "[0,1]"},
+      {"input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]", "output": "[0,2,1,3]"},
+      {"input": "numCourses = 1, prerequisites = []", "output": "[0]"}
+    ],
+    "constraints": ["1 <= numCourses <= 2000"],
+    "test_cases": [
+      {"input": [2, [[1,0]]], "expected": [0,1]},
+      {"input": [1, []], "expected": [0]}
+    ],
+    "function_name": "findOrder",
+    "ts_template": "function findOrder(numCourses: number, prerequisites: number[][]): number[] {\n    \n}",
+    "go_template": "func findOrder(numCourses int, prerequisites [][]int) []int {\n    return nil\n}",
+    "cs_template": "    public int[] FindOrder(int numCourses, int[][] prerequisites) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 211,
+    "title": "Design Add and Search Words Data Structure",
+    "difficulty": "Medium",
+    "tags": ["String", "Depth-First Search", "Design", "Trie"],
+    "description": "Design a data structure that supports adding new words and finding if a string matches any previously added string. '.' can match any letter.",
+    "examples": [
+      {"input": "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]", "output": "[null,null,null,null,false,true,true,true]"}
+    ],
+    "constraints": ["1 <= word.length <= 25"],
+    "test_cases": [],
+    "function_name": "WordDictionary",
+    "ts_template": "class WordDictionary {\n    constructor() {\n        \n    }\n\n    addWord(word: string): void {\n        \n    }\n\n    search(word: string): boolean {\n        \n    }\n}",
+    "go_template": "type WordDictionary struct {\n    // TODO\n}\n\nfunc Constructor() WordDictionary {\n    return WordDictionary{}\n}\n\nfunc (wd *WordDictionary) AddWord(word string) {}\nfunc (wd *WordDictionary) Search(word string) bool { return false }",
+    "cs_template": "    public WordDictionary() { }\n    public void AddWord(string word) { }\n    public bool Search(string word) { return false; }"
+  },
+  {
+    "id": 212,
+    "title": "Word Search II",
+    "difficulty": "Hard",
+    "tags": ["Array", "String", "Backtracking", "Trie", "Matrix"],
+    "description": "Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells.",
+    "examples": [
+      {"input": "board = [[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]], words = [\"oath\",\"pea\",\"eat\",\"rain\"]", "output": "[\"eat\",\"oath\"]"}
+    ],
+    "constraints": ["m == board.length", "n == board[i].length", "1 <= m, n <= 12"],
+    "test_cases": [],
+    "function_name": "findWords",
+    "ts_template": "function findWords(board: string[][], words: string[]): string[] {\n    \n}",
+    "go_template": "func findWords(board [][]byte, words []string) []string {\n    return nil\n}",
+    "cs_template": "    public IList<string> FindWords(char[][] board, string[] words) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 215,
+    "title": "Kth Largest Element in an Array",
+    "difficulty": "Medium",
+    "tags": ["Array", "Divide and Conquer", "Sorting", "Heap", "Quickselect"],
+    "description": "Given an integer array nums and an integer k, return the kth largest element in the array. Note that it is the kth largest element in the sorted order, not the kth distinct element.",
+    "examples": [
+      {"input": "nums = [3,2,1,5,6,4], k = 2", "output": "5"},
+      {"input": "nums = [3,2,3,1,2,4,5,5,6], k = 4", "output": "4"}
+    ],
+    "constraints": ["1 <= k <= nums.length <= 10^5"],
+    "test_cases": [
+      {"input": [[3,2,1,5,6,4], 2], "expected": 5},
+      {"input": [[3,2,3,1,2,4,5,5,6], 4], "expected": 4}
+    ],
+    "function_name": "findKthLargest",
+    "ts_template": "function findKthLargest(nums: number[], k: number): number {\n    \n}",
+    "go_template": "func findKthLargest(nums []int, k int) int {\n    return 0\n}",
+    "cs_template": "    public int FindKthLargest(int[] nums, int k) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 219,
+    "title": "Contains Duplicate II",
+    "difficulty": "Easy",
+    "tags": ["Array", "Hash Table", "Sliding Window"],
+    "description": "Given an integer array nums and an integer k, return true if there are two distinct indices i and j such that nums[i] == nums[j] and abs(i - j) <= k.",
+    "examples": [
+      {"input": "nums = [1,2,3,1], k = 3", "output": "true"},
+      {"input": "nums = [1,0,1,1], k = 1", "output": "true"},
+      {"input": "nums = [1,2,3,1,2,3], k = 2", "output": "false"}
+    ],
+    "constraints": ["1 <= nums.length <= 10^5", "0 <= k <= 10^5"],
+    "test_cases": [
+      {"input": [[1,2,3,1], 3], "expected": true},
+      {"input": [[1,0,1,1], 1], "expected": true},
+      {"input": [[1,2,3,1,2,3], 2], "expected": false}
+    ],
+    "function_name": "containsNearbyDuplicate",
+    "ts_template": "function containsNearbyDuplicate(nums: number[], k: number): boolean {\n    \n}",
+    "go_template": "func containsNearbyDuplicate(nums []int, k int) bool {\n    return false\n}",
+    "cs_template": "    public bool ContainsNearbyDuplicate(int[] nums, int k) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 222,
+    "title": "Count Complete Tree Nodes",
+    "difficulty": "Easy",
+    "tags": ["Binary Search", "Tree", "Depth-First Search", "Binary Tree"],
+    "description": "Given the root of a complete binary tree, return the number of the nodes in the tree. Must use less than O(n) time complexity.",
+    "examples": [
+      {"input": "root = [1,2,3,4,5,6]", "output": "6"},
+      {"input": "root = []", "output": "0"},
+      {"input": "root = [1]", "output": "1"}
+    ],
+    "constraints": ["0 <= number of nodes <= 5 * 10^4"],
+    "test_cases": [],
+    "function_name": "countNodes",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction countNodes(root: TreeNode | null): number {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc countNodes(root *TreeNode) int {\n    return 0\n}",
+    "cs_template": "    public int CountNodes(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 224,
+    "title": "Basic Calculator",
+    "difficulty": "Hard",
+    "tags": ["Math", "String", "Stack", "Recursion"],
+    "description": "Given a string s representing a valid expression, implement a basic calculator to evaluate it and return the result. The expression may contain '+', '-', '(', ')', and space characters.",
+    "examples": [
+      {"input": "s = \"1 + 1\"", "output": "2"},
+      {"input": "s = \" 2-1 + 2 \"", "output": "3"},
+      {"input": "s = \"(1+(4+5+2)-3)+(6+8)\"", "output": "23"}
+    ],
+    "constraints": ["1 <= s.length <= 3 * 10^5"],
+    "test_cases": [
+      {"input": ["1 + 1"], "expected": 2},
+      {"input": [" 2-1 + 2 "], "expected": 3},
+      {"input": ["(1+(4+5+2)-3)+(6+8)"], "expected": 23}
+    ],
+    "function_name": "calculate",
+    "ts_template": "function calculate(s: string): number {\n    \n}",
+    "go_template": "func calculate(s string) int {\n    return 0\n}",
+    "cs_template": "    public int Calculate(string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 226,
+    "title": "Invert Binary Tree",
+    "difficulty": "Easy",
+    "tags": ["Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree"],
+    "description": "Given the root of a binary tree, invert the tree, and return its root.",
+    "examples": [
+      {"input": "root = [4,2,7,1,3,6,9]", "output": "[4,7,2,9,6,3,1]"},
+      {"input": "root = [2,1,3]", "output": "[2,3,1]"},
+      {"input": "root = []", "output": "[]"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [0, 100]."],
+    "test_cases": [],
+    "function_name": "invertTree",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction invertTree(root: TreeNode | null): TreeNode | null {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc invertTree(root *TreeNode) *TreeNode {\n    return nil\n}",
+    "cs_template": "    public TreeNode InvertTree(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 228,
+    "title": "Summary Ranges",
+    "difficulty": "Easy",
+    "tags": ["Array"],
+    "description": "You are given a sorted unique integer array nums. A range [a,b] is the set of all integers from a to b. Return the smallest sorted list of ranges that cover all the numbers in the array exactly.",
+    "examples": [
+      {"input": "nums = [0,1,2,4,5,7]", "output": "[\"0->2\",\"4->5\",\"7\"]"},
+      {"input": "nums = [0,2,3,4,6,8,9]", "output": "[\"0\",\"2->4\",\"6\",\"8->9\"]"}
+    ],
+    "constraints": ["0 <= nums.length <= 20", "All values of nums are unique."],
+    "test_cases": [
+      {"input": [[0,1,2,4,5,7]], "expected": ["0->2","4->5","7"]},
+      {"input": [[0,2,3,4,6,8,9]], "expected": ["0","2->4","6","8->9"]},
+      {"input": [[]], "expected": []}
+    ],
+    "function_name": "summaryRanges",
+    "ts_template": "function summaryRanges(nums: number[]): string[] {\n    \n}",
+    "go_template": "func summaryRanges(nums []int) []string {\n    return nil\n}",
+    "cs_template": "    public IList<string> SummaryRanges(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 230,
+    "title": "Kth Smallest Element in a BST",
+    "difficulty": "Medium",
+    "tags": ["Tree", "Depth-First Search", "Binary Search Tree", "Binary Tree"],
+    "description": "Given the root of a binary search tree, and an integer k, return the kth smallest value (1-indexed) of all the values of the nodes in the tree.",
+    "examples": [
+      {"input": "root = [3,1,4,null,2], k = 1", "output": "1"},
+      {"input": "root = [5,3,6,2,4,null,null,1], k = 3", "output": "3"}
+    ],
+    "constraints": ["1 <= k <= n <= 10^4"],
+    "test_cases": [],
+    "function_name": "kthSmallest",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction kthSmallest(root: TreeNode | null, k: number): number {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc kthSmallest(root *TreeNode, k int) int {\n    return 0\n}",
+    "cs_template": "    public int KthSmallest(TreeNode root, int k) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 236,
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "difficulty": "Medium",
+    "tags": ["Tree", "Depth-First Search", "Binary Tree"],
+    "description": "Given a binary tree, find the lowest common ancestor (LCA) of two given nodes p and q. The LCA is defined as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).",
+    "examples": [
+      {"input": "root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1", "output": "3"},
+      {"input": "root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4", "output": "5"}
+    ],
+    "constraints": ["2 <= number of nodes <= 10^5"],
+    "test_cases": [],
+    "function_name": "lowestCommonAncestor",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: TreeNode | null): TreeNode | null {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {\n    return nil\n}",
+    "cs_template": "    public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 238,
+    "title": "Product of Array Except Self",
+    "difficulty": "Medium",
+    "tags": ["Array", "Prefix Sum"],
+    "description": "Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i]. Must run in O(n) time without using the division operation.",
+    "examples": [
+      {"input": "nums = [1,2,3,4]", "output": "[24,12,8,6]"},
+      {"input": "nums = [-1,1,0,-3,3]", "output": "[0,0,9,0,0]"}
+    ],
+    "constraints": ["2 <= nums.length <= 10^5", "-30 <= nums[i] <= 30"],
+    "test_cases": [
+      {"input": [[1,2,3,4]], "expected": [24,12,8,6]},
+      {"input": [[-1,1,0,-3,3]], "expected": [0,0,9,0,0]}
+    ],
+    "function_name": "productExceptSelf",
+    "ts_template": "function productExceptSelf(nums: number[]): number[] {\n    \n}",
+    "go_template": "func productExceptSelf(nums []int) []int {\n    return nil\n}",
+    "cs_template": "    public int[] ProductExceptSelf(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 242,
+    "title": "Valid Anagram",
+    "difficulty": "Easy",
+    "tags": ["Hash Table", "String", "Sorting"],
+    "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise. An anagram is a word formed by rearranging the letters of another.",
+    "examples": [
+      {"input": "s = \"anagram\", t = \"nagaram\"", "output": "true"},
+      {"input": "s = \"rat\", t = \"car\"", "output": "false"}
+    ],
+    "constraints": ["1 <= s.length, t.length <= 5 * 10^4", "s and t consist of lowercase English letters."],
+    "test_cases": [
+      {"input": ["anagram", "nagaram"], "expected": true},
+      {"input": ["rat", "car"], "expected": false},
+      {"input": ["a", "a"], "expected": true}
+    ],
+    "function_name": "isAnagram",
+    "ts_template": "function isAnagram(s: string, t: string): boolean {\n    \n}",
+    "go_template": "func isAnagram(s string, t string) bool {\n    return false\n}",
+    "cs_template": "    public bool IsAnagram(string s, string t) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 274,
+    "title": "H-Index",
+    "difficulty": "Medium",
+    "tags": ["Array", "Sorting", "Counting Sort"],
+    "description": "Given an array of integers citations where citations[i] is the number of citations a researcher received for their ith paper, return the researcher's h-index. The h-index is defined as the maximum value of h such that the researcher has published at least h papers with at least h citations each.",
+    "examples": [
+      {"input": "citations = [3,0,6,1,5]", "output": "3"},
+      {"input": "citations = [1,3,1]", "output": "1"}
+    ],
+    "constraints": ["n == citations.length", "1 <= n <= 5000", "0 <= citations[i] <= 1000"],
+    "test_cases": [
+      {"input": [[3,0,6,1,5]], "expected": 3},
+      {"input": [[1,3,1]], "expected": 1}
+    ],
+    "function_name": "hIndex",
+    "ts_template": "function hIndex(citations: number[]): number {\n    \n}",
+    "go_template": "func hIndex(citations []int) int {\n    return 0\n}",
+    "cs_template": "    public int HIndex(int[] citations) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 289,
+    "title": "Game of Life",
+    "difficulty": "Medium",
+    "tags": ["Array", "Matrix", "Simulation"],
+    "description": "Given an m x n grid board, apply the Game of Life rules simultaneously: live cell with 2-3 live neighbors survives; dead cell with exactly 3 live neighbors becomes alive; all others die or stay dead.",
+    "examples": [
+      {"input": "board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]", "output": "[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]"}
+    ],
+    "constraints": ["m == board.length", "n == board[i].length", "1 <= m, n <= 25"],
+    "test_cases": [],
+    "function_name": "gameOfLife",
+    "ts_template": "function gameOfLife(board: number[][]): void {\n    \n}",
+    "go_template": "func gameOfLife(board [][]int) {\n    \n}",
+    "cs_template": "    public void GameOfLife(int[][] board) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 290,
+    "title": "Word Pattern",
+    "difficulty": "Easy",
+    "tags": ["Hash Table", "String"],
+    "description": "Given a pattern and a string s, find if s follows the same pattern. Here 'follows' means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.",
+    "examples": [
+      {"input": "pattern = \"abba\", s = \"dog cat cat dog\"", "output": "true"},
+      {"input": "pattern = \"abba\", s = \"dog cat cat fish\"", "output": "false"},
+      {"input": "pattern = \"aaaa\", s = \"dog cat cat dog\"", "output": "false"}
+    ],
+    "constraints": ["1 <= pattern.length <= 300", "1 <= s.length <= 3000"],
+    "test_cases": [
+      {"input": ["abba", "dog cat cat dog"], "expected": true},
+      {"input": ["abba", "dog cat cat fish"], "expected": false},
+      {"input": ["aaaa", "dog cat cat dog"], "expected": false}
+    ],
+    "function_name": "wordPattern",
+    "ts_template": "function wordPattern(pattern: string, s: string): boolean {\n    \n}",
+    "go_template": "func wordPattern(pattern string, s string) bool {\n    return false\n}",
+    "cs_template": "    public bool WordPattern(string pattern, string s) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 295,
+    "title": "Find Median from Data Stream",
+    "difficulty": "Hard",
+    "tags": ["Two Pointers", "Design", "Sorting", "Heap", "Data Stream"],
+    "description": "The MedianFinder class finds the median from a data stream. Implement addNum(num) to add a number and findMedian() to return the current median of all elements.",
+    "examples": [
+      {"input": "[\"MedianFinder\",\"addNum\",\"addNum\",\"findMedian\",\"addNum\",\"findMedian\"]\n[[],[1],[2],[],[3],[]]", "output": "[null,null,null,1.5,null,2.0]"}
+    ],
+    "constraints": ["-10^5 <= num <= 10^5", "There will be at least one element before calling findMedian."],
+    "test_cases": [],
+    "function_name": "MedianFinder",
+    "ts_template": "class MedianFinder {\n    constructor() {\n        \n    }\n\n    addNum(num: number): void {\n        \n    }\n\n    findMedian(): number {\n        \n    }\n}",
+    "go_template": "type MedianFinder struct {\n    // TODO\n}\n\nfunc Constructor() MedianFinder {\n    return MedianFinder{}\n}\n\nfunc (mf *MedianFinder) AddNum(num int) {}\nfunc (mf *MedianFinder) FindMedian() float64 { return 0 }",
+    "cs_template": "    public MedianFinder() { }\n    public void AddNum(int num) { }\n    public double FindMedian() { return 0; }"
+  },
+  {
+    "id": 300,
+    "title": "Longest Increasing Subsequence",
+    "difficulty": "Medium",
+    "tags": ["Array", "Binary Search", "Dynamic Programming"],
+    "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence.",
+    "examples": [
+      {"input": "nums = [10,9,2,5,3,7,101,18]", "output": "4", "explanation": "[2,3,7,101]"},
+      {"input": "nums = [0,1,0,3,2,3]", "output": "4"},
+      {"input": "nums = [7,7,7,7,7,7,7]", "output": "1"}
+    ],
+    "constraints": ["1 <= nums.length <= 2500", "-10^4 <= nums[i] <= 10^4"],
+    "test_cases": [
+      {"input": [[10,9,2,5,3,7,101,18]], "expected": 4},
+      {"input": [[0,1,0,3,2,3]], "expected": 4},
+      {"input": [[7,7,7,7,7,7,7]], "expected": 1}
+    ],
+    "function_name": "lengthOfLIS",
+    "ts_template": "function lengthOfLIS(nums: number[]): number {\n    \n}",
+    "go_template": "func lengthOfLIS(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int LengthOfLIS(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 322,
+    "title": "Coin Change",
+    "difficulty": "Medium",
+    "tags": ["Array", "Dynamic Programming", "Breadth-First Search"],
+    "description": "You are given an integer array coins representing coins of various denominations and an integer amount representing a total amount of money. Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up, return -1.",
+    "examples": [
+      {"input": "coins = [1,5,11], amount = 15", "output": "3", "explanation": "[5,5,5]"},
+      {"input": "coins = [2], amount = 3", "output": "-1"},
+      {"input": "coins = [1], amount = 0", "output": "0"}
+    ],
+    "constraints": ["1 <= coins.length <= 12", "1 <= coins[i] <= 2^31 - 1", "0 <= amount <= 10^4"],
+    "test_cases": [
+      {"input": [[1,5,11], 15], "expected": 3},
+      {"input": [[2], 3], "expected": -1},
+      {"input": [[1], 0], "expected": 0}
+    ],
+    "function_name": "coinChange",
+    "ts_template": "function coinChange(coins: number[], amount: number): number {\n    \n}",
+    "go_template": "func coinChange(coins []int, amount int) int {\n    return -1\n}",
+    "cs_template": "    public int CoinChange(int[] coins, int amount) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 373,
+    "title": "Find K Pairs with Smallest Sums",
+    "difficulty": "Medium",
+    "tags": ["Array", "Heap"],
+    "description": "You are given two integer arrays nums1 and nums2 sorted in non-decreasing order and an integer k. Define a pair (u, v) which consists of one element from nums1 and one element from nums2. Return the k pairs (u1,v1),(u2,v2),...,(uk,vk) with the smallest sums.",
+    "examples": [
+      {"input": "nums1 = [1,7,11], nums2 = [2,4,6], k = 3", "output": "[[1,2],[1,4],[1,6]]"},
+      {"input": "nums1 = [1,1,2], nums2 = [1,2,3], k = 2", "output": "[[1,1],[1,1]]"}
+    ],
+    "constraints": ["1 <= nums1.length, nums2.length <= 10^5", "1 <= k <= 10^4"],
+    "test_cases": [],
+    "function_name": "kSmallestPairs",
+    "ts_template": "function kSmallestPairs(nums1: number[], nums2: number[], k: number): number[][] {\n    \n}",
+    "go_template": "func kSmallestPairs(nums1 []int, nums2 []int, k int) [][]int {\n    return nil\n}",
+    "cs_template": "    public IList<IList<int>> KSmallestPairs(int[] nums1, int[] nums2, int k) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 380,
+    "title": "Insert Delete GetRandom O(1)",
+    "difficulty": "Medium",
+    "tags": ["Array", "Hash Table", "Math", "Design", "Randomized"],
+    "description": "Implement the RandomizedSet class with insert, remove, and getRandom operations, all in average O(1) time.",
+    "examples": [
+      {"input": "[\"RandomizedSet\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\"]\n[[],[1],[2],[2],[],[1],[2],[]]", "output": "[null,true,false,true,2,true,false,2]"}
+    ],
+    "constraints": ["-2^31 <= val <= 2^31 - 1"],
+    "test_cases": [],
+    "function_name": "RandomizedSet",
+    "ts_template": "class RandomizedSet {\n    constructor() {\n        \n    }\n\n    insert(val: number): boolean {\n        \n    }\n\n    remove(val: number): boolean {\n        \n    }\n\n    getRandom(): number {\n        \n    }\n}",
+    "go_template": "type RandomizedSet struct {\n    // TODO\n}\n\nfunc Constructor() RandomizedSet {\n    return RandomizedSet{}\n}\n\nfunc (rs *RandomizedSet) Insert(val int) bool { return false }\nfunc (rs *RandomizedSet) Remove(val int) bool { return false }\nfunc (rs *RandomizedSet) GetRandom() int { return 0 }",
+    "cs_template": "    public RandomizedSet() { }\n    public bool Insert(int val) { return false; }\n    public bool Remove(int val) { return false; }\n    public int GetRandom() { return 0; }"
+  },
+  {
+    "id": 383,
+    "title": "Ransom Note",
+    "difficulty": "Easy",
+    "tags": ["Hash Table", "String", "Counting"],
+    "description": "Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise. Each letter in magazine can only be used once.",
+    "examples": [
+      {"input": "ransomNote = \"a\", magazine = \"b\"", "output": "false"},
+      {"input": "ransomNote = \"aa\", magazine = \"ab\"", "output": "false"},
+      {"input": "ransomNote = \"aa\", magazine = \"aab\"", "output": "true"}
+    ],
+    "constraints": ["1 <= ransomNote.length, magazine.length <= 10^5"],
+    "test_cases": [
+      {"input": ["a", "b"], "expected": false},
+      {"input": ["aa", "ab"], "expected": false},
+      {"input": ["aa", "aab"], "expected": true}
+    ],
+    "function_name": "canConstruct",
+    "ts_template": "function canConstruct(ransomNote: string, magazine: string): boolean {\n    \n}",
+    "go_template": "func canConstruct(ransomNote string, magazine string) bool {\n    return false\n}",
+    "cs_template": "    public bool CanConstruct(string ransomNote, string magazine) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 392,
+    "title": "Is Subsequence",
+    "difficulty": "Easy",
+    "tags": ["Two Pointers", "String", "Dynamic Programming"],
+    "description": "Given two strings s and t, return true if s is a subsequence of t, or false otherwise. A subsequence of a string is a new string generated from the original string with some characters deleted without changing the relative order.",
+    "examples": [
+      {"input": "s = \"abc\", t = \"ahbgdc\"", "output": "true"},
+      {"input": "s = \"axc\", t = \"ahbgdc\"", "output": "false"}
+    ],
+    "constraints": ["0 <= s.length <= 100", "0 <= t.length <= 10^4"],
+    "test_cases": [
+      {"input": ["abc", "ahbgdc"], "expected": true},
+      {"input": ["axc", "ahbgdc"], "expected": false},
+      {"input": ["", "ahbgdc"], "expected": true}
+    ],
+    "function_name": "isSubsequence",
+    "ts_template": "function isSubsequence(s: string, t: string): boolean {\n    \n}",
+    "go_template": "func isSubsequence(s string, t string) bool {\n    return false\n}",
+    "cs_template": "    public bool IsSubsequence(string s, string t) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 399,
+    "title": "Evaluate Division",
+    "difficulty": "Medium",
+    "tags": ["Array", "Depth-First Search", "Breadth-First Search", "Union Find", "Graph"],
+    "description": "You are given an array equations and array values, and some queries. Each equation equations[i] = [Ai, Bi] and values[i] represents Ai / Bi = values[i]. Return the answers to the queries.",
+    "examples": [
+      {"input": "equations = [[\"a\",\"b\"],[\"b\",\"c\"]], values = [2.0,3.0], queries = [[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]", "output": "[6.0,0.5,-1.0,1.0,-1.0]"}
+    ],
+    "constraints": ["1 <= equations.length <= 20"],
+    "test_cases": [],
+    "function_name": "calcEquation",
+    "ts_template": "function calcEquation(equations: string[][], values: number[], queries: string[][]): number[] {\n    \n}",
+    "go_template": "func calcEquation(equations [][]string, values []float64, queries [][]string) []float64 {\n    return nil\n}",
+    "cs_template": "    public double[] CalcEquation(IList<IList<string>> equations, double[] values, IList<IList<string>> queries) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 427,
+    "title": "Construct Quad Tree",
+    "difficulty": "Medium",
+    "tags": ["Array", "Divide and Conquer", "Tree", "Matrix"],
+    "description": "Given an n x n matrix grid of 0's and 1's, construct a Quad-Tree representation for the grid.",
+    "examples": [
+      {"input": "grid = [[0,1],[1,0]]", "output": "[[0,1],[1,0],[1,1],[1,1],[1,0]]"}
+    ],
+    "constraints": ["n == grid.length == grid[i].length", "n == 2^x where 0 <= x <= 6"],
+    "test_cases": [],
+    "function_name": "construct",
+    "ts_template": "class Node {\n    val: boolean; isLeaf: boolean; topLeft: Node | null; topRight: Node | null; bottomLeft: Node | null; bottomRight: Node | null;\n    constructor(val: boolean, isLeaf: boolean, topLeft: Node | null = null, topRight: Node | null = null, bottomLeft: Node | null = null, bottomRight: Node | null = null) {\n        this.val = val; this.isLeaf = isLeaf; this.topLeft = topLeft; this.topRight = topRight; this.bottomLeft = bottomLeft; this.bottomRight = bottomRight;\n    }\n}\n\nfunction construct(grid: number[][]): Node | null {\n    \n}",
+    "go_template": "type Node struct {\n    Val         bool\n    IsLeaf      bool\n    TopLeft     *Node\n    TopRight    *Node\n    BottomLeft  *Node\n    BottomRight *Node\n}\n\nfunc construct(grid [][]int) *Node {\n    return nil\n}",
+    "cs_template": "    public Node Construct(int[][] grid) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 433,
+    "title": "Minimum Genetic Mutation",
+    "difficulty": "Medium",
+    "tags": ["Hash Table", "String", "Breadth-First Search"],
+    "description": "A gene string can be represented by an 8-character long string with choices from 'A', 'C', 'G', 'T'. Return the minimum number of mutations needed to mutate from startGene to endGene using gene bank.",
+    "examples": [
+      {"input": "startGene = \"AACCGGTT\", endGene = \"AACCGGTA\", bank = [\"AACCGGTA\"]", "output": "1"},
+      {"input": "startGene = \"AACCGGTT\", endGene = \"AAACGGTA\", bank = [\"AACCGGTA\",\"AACCGCTA\",\"AAACGGTA\"]", "output": "2"}
+    ],
+    "constraints": ["0 <= bank.length <= 10"],
+    "test_cases": [
+      {"input": ["AACCGGTT", "AACCGGTA", ["AACCGGTA"]], "expected": 1},
+      {"input": ["AACCGGTT", "AAACGGTA", ["AACCGGTA","AACCGCTA","AAACGGTA"]], "expected": 2}
+    ],
+    "function_name": "minMutation",
+    "ts_template": "function minMutation(startGene: string, endGene: string, bank: string[]): number {\n    \n}",
+    "go_template": "func minMutation(startGene string, endGene string, bank []string) int {\n    return -1\n}",
+    "cs_template": "    public int MinMutation(string startGene, string endGene, string[] bank) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 452,
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "difficulty": "Medium",
+    "tags": ["Array", "Greedy", "Sorting"],
+    "description": "There are some spherical balloons taped on a flat wall represented as intervals [xstart, xend]. Return the minimum number of arrows that must be shot to burst all balloons.",
+    "examples": [
+      {"input": "points = [[10,16],[2,8],[1,6],[7,12]]", "output": "2"},
+      {"input": "points = [[1,2],[3,4],[5,6],[7,8]]", "output": "4"},
+      {"input": "points = [[1,2],[2,3],[3,4],[4,5]]", "output": "2"}
+    ],
+    "constraints": ["1 <= points.length <= 10^5"],
+    "test_cases": [
+      {"input": [[[10,16],[2,8],[1,6],[7,12]]], "expected": 2},
+      {"input": [[[1,2],[3,4],[5,6],[7,8]]], "expected": 4},
+      {"input": [[[1,2],[2,3],[3,4],[4,5]]], "expected": 2}
+    ],
+    "function_name": "findMinArrowShots",
+    "ts_template": "function findMinArrowShots(points: number[][]): number {\n    \n}",
+    "go_template": "func findMinArrowShots(points [][]int) int {\n    return 0\n}",
+    "cs_template": "    public int FindMinArrowShots(int[][] points) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 502,
+    "title": "IPO",
+    "difficulty": "Hard",
+    "tags": ["Array", "Greedy", "Sorting", "Heap"],
+    "description": "Before IPO, LeetCode wants to work on some projects. Given k projects to do, initial capital w, and arrays profits and capital, return the maximized capital after finishing at most k distinct projects.",
+    "examples": [
+      {"input": "k = 2, w = 0, profits = [1,2,3], capital = [0,1,1]", "output": "4"},
+      {"input": "k = 3, w = 0, profits = [1,2,3], capital = [0,1,2]", "output": "6"}
+    ],
+    "constraints": ["1 <= k <= 10^5", "0 <= w <= 10^9"],
+    "test_cases": [
+      {"input": [2, 0, [1,2,3], [0,1,1]], "expected": 4},
+      {"input": [3, 0, [1,2,3], [0,1,2]], "expected": 6}
+    ],
+    "function_name": "findMaximizedCapital",
+    "ts_template": "function findMaximizedCapital(k: number, w: number, profits: number[], capital: number[]): number {\n    \n}",
+    "go_template": "func findMaximizedCapital(k int, w int, profits []int, capital []int) int {\n    return 0\n}",
+    "cs_template": "    public int FindMaximizedCapital(int k, int w, int[] profits, int[] capital) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 530,
+    "title": "Minimum Absolute Difference in BST",
+    "difficulty": "Easy",
+    "tags": ["Tree", "Depth-First Search", "Breadth-First Search", "Binary Search Tree"],
+    "description": "Given the root of a Binary Search Tree (BST), return the minimum absolute difference between the values of any two different nodes in the tree.",
+    "examples": [
+      {"input": "root = [4,2,6,1,3]", "output": "1"},
+      {"input": "root = [1,0,48,null,null,12,49]", "output": "1"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [2, 10^4]."],
+    "test_cases": [],
+    "function_name": "getMinimumDifference",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction getMinimumDifference(root: TreeNode | null): number {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc getMinimumDifference(root *TreeNode) int {\n    return 0\n}",
+    "cs_template": "    public int GetMinimumDifference(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 637,
+    "title": "Average of Levels in Binary Tree",
+    "difficulty": "Easy",
+    "tags": ["Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree"],
+    "description": "Given the root of a binary tree, return the average value of the nodes on each level in the form of an array.",
+    "examples": [
+      {"input": "root = [3,9,20,null,null,15,7]", "output": "[3.00000,14.50000,11.00000]"},
+      {"input": "root = [3,9,20,15,7]", "output": "[3.00000,14.50000,11.00000]"}
+    ],
+    "constraints": ["The number of nodes in the tree is in the range [1, 10^4]."],
+    "test_cases": [],
+    "function_name": "averageOfLevels",
+    "ts_template": "class TreeNode {\n    val: number; left: TreeNode | null; right: TreeNode | null;\n    constructor(val = 0, left: TreeNode | null = null, right: TreeNode | null = null) { this.val = val; this.left = left; this.right = right; }\n}\n\nfunction averageOfLevels(root: TreeNode | null): number[] {\n    \n}",
+    "go_template": "type TreeNode struct {\n    Val   int\n    Left  *TreeNode\n    Right *TreeNode\n}\n\nfunc averageOfLevels(root *TreeNode) []float64 {\n    return nil\n}",
+    "cs_template": "    public IList<double> AverageOfLevels(TreeNode root) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 68,
+    "title": "Text Justification",
+    "difficulty": "Hard",
+    "tags": ["Array", "String", "Simulation"],
+    "description": "Given an array of strings words and a width maxWidth, format the text such that each line has exactly maxWidth characters and is fully justified (left and right).",
+    "examples": [
+      {"input": "words = [\"This\",\"is\",\"an\",\"example\",\"of\",\"text\",\"justification.\"], maxWidth = 16", "output": "[\"This    is    an\",\"example  of text\",\"justification.  \"]"}
+    ],
+    "constraints": ["1 <= words.length <= 300", "1 <= words[i].length <= 20", "1 <= maxWidth <= 100"],
+    "test_cases": [],
+    "function_name": "fullJustify",
+    "ts_template": "function fullJustify(words: string[], maxWidth: number): string[] {\n    \n}",
+    "go_template": "func fullJustify(words []string, maxWidth int) []string {\n    return nil\n}",
+    "cs_template": "    public IList<string> FullJustify(string[] words, int maxWidth) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 909,
+    "title": "Snakes and Ladders",
+    "difficulty": "Medium",
+    "tags": ["Array", "Breadth-First Search", "Matrix"],
+    "description": "You are given an n x n integer matrix board. Return the least number of moves required to reach the square n^2. If it is not possible, return -1.",
+    "examples": [
+      {"input": "board = [[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1],[-1,35,-1,-1,13,-1],[-1,-1,-1,-1,-1,-1],[-1,15,-1,-1,-1,-1]]", "output": "4"}
+    ],
+    "constraints": ["n == board.length == board[i].length", "2 <= n <= 20"],
+    "test_cases": [],
+    "function_name": "snakesAndLadders",
+    "ts_template": "function snakesAndLadders(board: number[][]): number {\n    \n}",
+    "go_template": "func snakesAndLadders(board [][]int) int {\n    return -1\n}",
+    "cs_template": "    public int SnakesAndLadders(int[][] board) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 918,
+    "title": "Maximum Sum Circular Subarray",
+    "difficulty": "Medium",
+    "tags": ["Array", "Divide and Conquer", "Dynamic Programming", "Queue", "Monotonic Queue"],
+    "description": "Given a circular integer array nums, return the maximum possible sum of a non-empty subarray of nums. A circular array means the end of the array connects to the beginning.",
+    "examples": [
+      {"input": "nums = [1,-2,3,-2]", "output": "3"},
+      {"input": "nums = [5,-3,5]", "output": "10"},
+      {"input": "nums = [-3,-2,-3]", "output": "-2"}
+    ],
+    "constraints": ["n == nums.length", "1 <= n <= 3 * 10^4", "-3 * 10^4 <= nums[i] <= 3 * 10^4"],
+    "test_cases": [
+      {"input": [[1,-2,3,-2]], "expected": 3},
+      {"input": [[5,-3,5]], "expected": 10},
+      {"input": [[-3,-2,-3]], "expected": -2}
+    ],
+    "function_name": "maxSubarraySumCircular",
+    "ts_template": "function maxSubarraySumCircular(nums: number[]): number {\n    \n}",
+    "go_template": "func maxSubarraySumCircular(nums []int) int {\n    return 0\n}",
+    "cs_template": "    public int MaxSubarraySumCircular(int[] nums) {\n        throw new NotImplementedException();\n    }"
+  },
+  {
+    "id": 190,
+    "title": "Reverse Bits",
+    "difficulty": "Easy",
+    "tags": ["Divide and Conquer", "Bit Manipulation"],
+    "description": "Reverse bits of a given 32 bits unsigned integer.",
+    "examples": [
+      {"input": "n = 00000010100101000001111010011100", "output": "964176192 (00111001011110000010100101000000)"},
+      {"input": "n = 11111111111111111111111111111101", "output": "3221225471 (10111111111111111111111111111111)"}
+    ],
+    "constraints": ["The input must be a binary string of length 32"],
+    "test_cases": [
+      {"input": [43261596], "expected": 964176192},
+      {"input": [4294967293], "expected": 3221225471}
+    ],
+    "function_name": "reverseBits",
+    "ts_template": "function reverseBits(n: number): number {\n    \n}",
+    "go_template": "func reverseBits(num uint32) uint32 {\n    return 0\n}",
+    "cs_template": "    public uint reverseBits(uint n) {\n        throw new NotImplementedException();\n    }"
+  }
+]
