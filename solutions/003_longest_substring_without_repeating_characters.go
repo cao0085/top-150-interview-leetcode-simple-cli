@@ -6,22 +6,23 @@ import "fmt"
 // Tags: Hash Table, String, Sliding Window
 
 func lengthOfLongestSubstring(s string) int {
+  if(len(s)) == 0 {
+      return 0
+  }
   left := 0
   max := 0
   currSet := make(map[byte]int)
   for i := 0; i < len(s); i++ {
     c := s[i]
-    if oldIndex, exist := recordSet[c]; !exist {
-      currSet[c] = i     
-    } else {
-      
+    if oldIndex, exist := currSet[c]; exist && oldIndex >= left {
+      left = oldIndex + 1
     }
-
+   currSet[c] = i
     if (i - left) > max {
       max = i - left
     }
   }
-  return max
+  return max + 1
 }
 
 func main() {
