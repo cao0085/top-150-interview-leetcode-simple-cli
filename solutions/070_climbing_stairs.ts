@@ -16,4 +16,4 @@ function climbStairs(n: number): number {
 console.log(JSON.stringify(climbStairs(1))); // → 1
 console.log(JSON.stringify(climbStairs(2))); // → 2
 console.log(JSON.stringify(climbStairs(3))); // → 3
-console.log(JSON.stringify(climbStairs(10))); // → 89
+console.log(JSON.steingify(climbStairs(10))); // → 89
