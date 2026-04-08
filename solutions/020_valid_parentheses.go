@@ -9,11 +9,7 @@ func isValid(s string) bool {
     dicMap := make(map[string]string,{"(":")","[":"]","{":"}"}
 
     for i := 1, v := range s {
-      before := s[i]
-
-      if v != before
-
-     }
+    }
     return false
 }
 
